@@ -1,0 +1,63 @@
+{
+  "pairs": 5,
+  "baseline_mean": 16.55,
+  "sharpness_min": 0.751,
+  "midpoint_deviation_max": 0.373,
+  "detail": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "baseline_ab": 16.59,
+      "mid_target": 8.29,
+      "mad_to_a": 11.28,
+      "mad_to_b": 11.29,
+      "sharpness_ratio": 0.751
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "baseline_ab": 17.37,
+      "mid_target": 8.69,
+      "mad_to_a": 11.87,
+      "mad_to_b": 11.61,
+      "sharpness_ratio": 0.857
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "baseline_ab": 17.77,
+      "mid_target": 8.88,
+      "mad_to_a": 12.05,
+      "mad_to_b": 12.29,
+      "sharpness_ratio": 0.813
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "baseline_ab": 18.06,
+      "mid_target": 9.03,
+      "mad_to_a": 12.4,
+      "mad_to_b": 12.37,
+      "sharpness_ratio": 0.839
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "baseline_ab": 12.95,
+      "mid_target": 6.47,
+      "mad_to_a": 8.83,
+      "mad_to_b": 8.87,
+      "sharpness_ratio": 0.82
+    }
+  ]
+}
