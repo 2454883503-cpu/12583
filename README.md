@@ -124,34 +124,32 @@ powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
 
 ## 四、配置远端
 
-仓库当前**只有本地历史，没有远端**。三种选法，任选一个：
+**当前状态**：`origin` 指向本机离线备份库 `D:\AA12583\dsh-backup\dsh-components.git`，
+已经推上去了，换盘/U 盘拷走就能用，但**另一个房间以外的电脑拿不到**。
 
-**A. GitHub / Gitee（推荐，两台都能上网时）**
-
-```powershell
-git remote add origin https://github.com/<你>/dsh-components.git
-git push -u origin main
-```
-
-> 私密性：`dsh-replica-20261016/` 里含完整安装快照和文档，介意就建 **私有仓库**。
-
-**B. U 盘 / 网盘的裸库（不想上公网）**
-
-在一台机器上：
+接真正的远端只需一条命令（本机没有 GitHub 凭据，所以这步留给你）：
 
 ```powershell
-git clone --bare D:\AA12583\dsh\组件 E:\dsh-components.git
+.\scripts\connect-remote.ps1 -Url https://github.com/<你>/dsh-components.git
 ```
 
-两台都指过去：
+它会自动：配 github 代理（本机直连不通，必须走 `127.0.0.1:7892`）、把 origin 换成新地址、
+原离线库改名为 `backup` 继续保留、推送全部分支、把地址写回 `scripts\remote.conf`。
+
+有 PAT 的话加上 `-Token ghp_xxx`（classic token 勾 `repo` 权限），就不用每次登录。
+
+> **务必建私有仓库**：`dsh-replica-20261016/` 含完整安装快照、会话缓存和大量文档。
+> 密钥文件已被 `.gitignore` 拦住，但快照本身不适合公开。
+
+**不想上公网的话**，U 盘 / 网盘就够了，当前 `origin` 已经是这个形态：
 
 ```powershell
-git remote add origin E:\dsh-components.git    # 或 \\NAS\share\dsh-components.git
+# 在另一台电脑上，把整个 D:\AA12583\dsh-backup 拷过去，然后
+git clone D:\AA12583\dsh-backup\dsh-components.git D:\AA12583\dsh\组件
+# 之后 origin 指向本地路径，push/pull 照常工作
 ```
 
-**C. 局域网自建**：任何 git 服务器（Gitea、GitLab）开个私有仓库即可。
-
-配好之后把地址填进 `scripts\remote.conf` 的 `ORIGIN=`，脚本就不用每次带 `-Remote` 了。
+**局域网自建**：Gitea / GitLab 开个私有仓库，用同一套 `connect-remote.ps1`。
 
 ---
 
@@ -181,10 +179,14 @@ git remote add origin E:\dsh-components.git    # 或 \\NAS\share\dsh-components.
 | 这台机器 `git` 不在 PATH | `Find-Git` 依次找 环境变量/PortableGit/Fork 内置/常见安装位置；也可 `setx DSH_SYNC_GIT <路径>` |
 | 仓库路径含中文 | cordis 的 `file://` 地址用百分号编码的 `@COMPONENT_URI@`，不用手写 |
 | 配置文件是 UTF-8 无 BOM | 脚本一律按 `UTF8Encoding($false)` 读写，避免 BOM 把 YAML/JSON 弄坏 |
+| `.ps1` 含中文时 5.1 报语法错 | 必须存成 **UTF-8 with BOM**；`config/**` 反之必须无 BOM |
 | pnpm 用 `link:` 指向工作区源码 | `setup.ps1` 先还原 `package.json` 再 install，链接才对得上 |
-| dsh-ide-git 报 "cannot start git" | `setup.ps1` 自动写 `DSH_IDE_GIT_BIN` 用户环境变量 |
+| dsh-ide-git 报 "cannot start git" | `setup.ps1` 自动写 `DSH_IDE_GIT_BIN` 用户环境变量（**不能**写进 `~/.dsh/.env`，会致命报错） |
 | 两台机器 CRLF/LF 不同导致整文件 diff | `.gitattributes` 统一 `text=auto`，仓库里按 LF 存 |
 | DSH 恢复机制会重写 `cordis.patch.yml` | 仓库里始终留着一份，随时 `capture-profile.ps1` 对照恢复 |
+| github.com 直连失败 | 必须走本机代理 `127.0.0.1:7892`，`connect-remote.ps1` 会自动配进 `.git/config` |
+
+更细的排查记录在 [docs/环境与踩坑.md](docs/环境与踩坑.md)。
 
 ---
 
@@ -196,4 +198,6 @@ git remote add origin E:\dsh-components.git    # 或 \\NAS\share\dsh-components.
 .\scripts\sync.ps1 push            # 提交并推送
 .\scripts\capture-profile.ps1      # 界面改完设置后，回填配置模板
 .\scripts\setup.ps1                # 新机器一键部署（可重复跑，幂等）
+.\scripts\connect-remote.ps1 -Url https://github.com/<你>/dsh-components.git   # 接真远端
 ```
+
