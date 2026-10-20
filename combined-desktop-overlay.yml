@@ -1,0 +1,126 @@
+- insert:
+    - id: desktop-pet
+      name: dsh-desktop-pet
+      config:
+        enabled: true
+        alwaysOnTop: true
+        petScale: 1
+        petId: text
+        hideWhenIdle: false
+        animationEnabled: true
+        idleFrequencySec: 20
+        clickThrough: false
+        startSleeping: false
+        animationSpeed: 1
+- insert:
+    - id: session-sync
+      name: dsh-session-sync
+      config:
+        enabled: true
+        backend: git
+        sessionRoot: ''
+        repoDir: ''
+        remote: ''
+        branch: main
+        gitBin: git
+        ageBin: age
+        ageRecipient: ''
+        ageIdentity: ''
+        autoPullOnStart: false
+        autoPushOnTurnEnd: false
+        pullIntervalMinutes: 0
+        confirmVia: auto
+        graceMs: 10000
+        commandTimeoutMs: 120000
+        maxOutputBytes: 262144
+        commitName: dsh-session-sync
+        commitEmail: dsh-session-sync@localhost
+        registerCommand: true
+        registerTools: true
+- insert:
+    - id: image-gen
+      name: dsh-image-gen
+      config:
+        provider: google
+- insert:
+    - id: plugin-manager
+      name: dsh-plugin-manager-plus
+- id: ui-chat
+  name: '@deepseek-ai/dsh-client-ui-chat'
+  config:
+    transcriptView: standard
+    performanceUsage: detailed
+- id: ui-settings
+  name: '@deepseek-ai/dsh-client-ui-settings'
+  config:
+    enabled: true
+- id: ui-settings-account
+  name: '@deepseek-ai/dsh-client-ui-settings-account'
+  config:
+    version: 1
+    step: done
+    usage: detailed
+    developerTools: true
+    purpose: null
+    process: standard
+    completion: api-key
+- id: ui-theme
+  name: '@deepseek-ai/dsh-client-ui-theme'
+  config:
+    preference: dark
+    fontSize: 16
+- id: llm-pi-ai
+  name: '@deepseek-ai/dsh-llm-pi-ai'
+  config:
+    providers:
+      gpt-local:
+        displayName: GPT (Codex bridge)
+        api: openai-completions
+        baseURL: http://127.0.0.1:18080/v1
+        compat:
+          supportsReasoningEffort: true
+          thinkingFormat: openai
+        headers:
+          Authorization: Bearer dummy-not-a-real-openai-api-key
+        models:
+          - id: gpt-5.6-luna
+            name: GPT-5.6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6-luna
+            name: GPT-6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6.1-sol
+            name: GPT-6.1 Sol
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+- id: agent-default-model
+  name: '@deepseek-ai/dsh-agent-default-model'
+  config:
+    provider: gpt-local
+    model: gpt-6.1-sol
+    reasoningEffort: high
+- insert:
+    - id: gpt-quota
+      name: file:///D:/AA12583/dsh/%E7%BB%84%E4%BB%B6/gpt-quota-plugin/index.mjs
+      config:
+        revision: 5
+- id: session-sync
+  config:
+    gitBin: C:\Users\tanyu\.workbuddy\binaries\PortableGit\versions\1.2.0\cmd\git.exe

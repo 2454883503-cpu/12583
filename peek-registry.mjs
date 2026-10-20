@@ -1,0 +1,13 @@
+﻿import fs from 'node:fs';
+const j = await (await fetch('https://api.github.com/repos/Ebony-Vinyl/dsh-our-free-model/contents/src/providers/registry.json')).json();
+const reg = JSON.parse(Buffer.from(j.content, 'base64').toString('utf8'));
+fs.writeFileSync('ofm-repo/registry.json', JSON.stringify(reg, null, 2));
+console.log('providers:', reg.length);
+const cats = {};
+for (const p of reg) cats[p.category] = (cats[p.category] ?? 0) + 1;
+console.log('--- categories ---');
+console.log(Object.entries(cats).map(([k,v])=>`${k}: ${v}`).join('\n'));
+console.log('\n--- non-apikey providers (first 25) ---');
+const free = reg.filter((p) => p.category !== 'apikey');
+console.log(free.slice(0, 25).map((p) => `${p.category.padEnd(14)} ${p.id.padEnd(20)} ${p.baseUrl}`).join('\n'));
+console.log('\ntotal non-apikey:', free.length);

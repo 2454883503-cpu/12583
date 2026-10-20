@@ -1,0 +1,42 @@
+# 统一按 LF 存进仓库，检出时不动行尾，避免两台 Windows 机器之间产生假改动
+* text=auto
+
+# 明确文本类型（很多自定义扩展名 git 认不出来）
+*.md      text
+*.mjs     text
+*.cjs     text
+*.js      text
+*.ts      text
+*.json    text
+*.yml     text
+*.yaml    text
+*.ps1     text
+*.cmd     text
+*.vbs     text
+*.py      text
+*.html    text
+*.css     text
+*.webmanifest text
+
+# 二进制：不做行尾转换，也不做文本 diff（否则 git 会认为是「大文本改动」）
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.webp    binary
+*.ico     binary
+*.exe     binary
+*.dll     binary
+*.zip     binary
+*.7z      binary
+*.tgz     binary
+*.gz      binary
+*.woff    binary
+*.woff2   binary
+
+# 二进制文件的 diff 用「是否变化」而不是逐行
+*.exe     -diff -merge
+*.zip     -diff -merge
+*.7z      -diff -merge
+*.tgz     -diff -merge
+*.gz      -diff -merge

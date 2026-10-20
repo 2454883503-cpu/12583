@@ -1,0 +1,30 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "@dsh-eac/skin-loader-pack": "link:@DSH_COMPONENTS@/EAC-skin-loader",
+    "dsh-desktop-pet": "^0.2.0",
+    "dsh-ide-git": "0.19.9",
+    "dsh-image-gen": "^0.9.1",
+    "dsh-office-tools": "1.0.6",
+    "dsh-our-free-model": "link:@DSH_COMPONENTS@/dsh-our-free-model",
+    "dsh-plugin-workbuddy": "link:@USERPROFILE@/workbuddy-to-dsh/dsh-plugin",
+    "dsh-session-sync": "^0.2.24"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-desktop-pet",
+        "dsh-session-sync",
+        "dsh-image-gen",
+        "dsh-plugin-workbuddy",
+        "dsh-our-free-model",
+        "@dsh-eac/skin-loader-pack",
+        "dsh-office-tools",
+        "dsh-ide-git"
+      ]
+    }
+  }
+}

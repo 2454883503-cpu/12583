@@ -1,0 +1,16 @@
+﻿import fs from 'node:fs';
+import { createRequire } from 'node:module';
+const require = createRequire('file:///C:/Users/tanyu/dsh/');
+const yaml = require('js-yaml');
+const p = 'C:/Users/tanyu/.dsh/profiles/desktop/';
+const patch = yaml.load(fs.readFileSync(p + 'cordis.patch.yml', 'utf8'));
+const manifest = JSON.parse(fs.readFileSync(p + 'package.json', 'utf8'));
+const override = patch.find((e) => e.id === 'session-sync');
+const installed = JSON.parse(fs.readFileSync(p + 'node_modules/dsh-session-sync/package.json', 'utf8'));
+console.log('patch entries     :', patch.length, '(parses OK)');
+console.log('session-sync row  :', JSON.stringify(override));
+console.log('bundles           :', manifest.dsh.profile.bundles.join(', '));
+console.log('dependencies      :', Object.keys(manifest.dependencies).join(', '));
+console.log('installed version :', installed.name, installed.version);
+console.log('declares bundle   :', installed.dsh?.bundle?.patch);
+console.log('declares scripts  :', JSON.stringify(installed.scripts && Object.keys(installed.scripts).filter((k) => /install|prepare|postinstall/.test(k))));

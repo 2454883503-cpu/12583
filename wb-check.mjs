@@ -1,0 +1,13 @@
+﻿import fs from 'node:fs';
+import { createRequire } from 'node:module';
+const require = createRequire('file:///C:/Users/tanyu/dsh/');
+const yaml = require('js-yaml');
+const P = 'C:/Users/tanyu/.dsh/profiles/desktop/';
+const user = yaml.load(fs.readFileSync(P + 'cordis.patch.yml', 'utf8')) ?? [];
+const w = user.find((e) => e.id === 'workbuddy');
+console.log('user patch workbuddy entry:', JSON.stringify(w, null, 2));
+const wb = JSON.parse(fs.readFileSync(P + 'node_modules/dsh-plugin-workbuddy/package.json', 'utf8'));
+const rel = wb.dsh?.bundle?.patch;
+console.log('\nworkbuddy bundle patch:', rel);
+const y = yaml.load(fs.readFileSync(P + 'node_modules/dsh-plugin-workbuddy/' + rel.replace(/^\.\//, ''), 'utf8'));
+console.log(JSON.stringify(y, null, 2));

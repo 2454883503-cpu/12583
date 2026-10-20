@@ -1,0 +1,67 @@
+# ============================================================
+#  DSH 双机同步仓库
+#  原则：进仓库的是「源码 / 配置 / 文档」，不进仓库的是
+#       「依赖 / 构建产物 / 缓存 / 密钥 / 可再下载的大包」
+# ============================================================
+
+# ---------- 依赖 ----------
+node_modules/
+.pnpm-store/
+.pnpm/
+yarn.lock.bak
+
+# ---------- 构建产物 / 缓存 ----------
+dist/
+build/
+out/
+*.tsbuildinfo
+.cache/
+.turbo/
+.eslintcache
+.vite/
+coverage/
+
+# 皮肤工程的构建校验产物（可重新生成，单个 7MB+）
+.verify/
+
+# ---------- 日志 / 运行时垃圾 ----------
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+
+# ---------- 编辑器 / 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# ---------- 密钥 / 凭据（绝对不要进仓库）----------
+# DSH 账号凭据、模型网关密钥、bridge token 等
+.credentials.yaml
+.credentials.yaml.*
+.env
+.env.*
+!.env.example
+secrets/
+auth.json
+codex-auth.json
+*.pem
+*.key
+.bridge-token
+.token
+*token*.json
+
+# 本机专属状态：宠物位置、签到状态、令牌账本、模型偏好
+position.json
+state.json
+auto-checkin.json
+token-ledger.json
+.model-prefs.json
+
+# 运行时临时文件
+*.tmp
+*.part
+~$*

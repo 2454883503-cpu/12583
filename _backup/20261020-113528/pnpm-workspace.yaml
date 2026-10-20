@@ -1,0 +1,9 @@
+packages:
+  - .
+
+nodeLinker: hoisted
+autoInstallPeers: false
+allowBuilds:
+  dsh-desktop-pet: true
+minimumReleaseAgeExclude:
+  - dsh-image-gen@0.9.1

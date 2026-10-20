@@ -1,0 +1,6 @@
+29e3b19615d792abce4eaff3fa434920dcd58347ba284e7c7165f5761a572a0a  openai-api-server-via-codex_0.2.2_linux_amd64.tar.gz
+76f7819cbfe9f69b431183d8370209e6806df1101f745f4f0247ef0ab23ea634  openai-api-server-via-codex_0.2.2_linux_arm64.tar.gz
+176d8ff3c200c4f4acac3b6c710421de7248b368b67ba73dac91e93f1b614f35  openai-api-server-via-codex_0.2.2_darwin_amd64.tar.gz
+d1ca99cadf00b80bd9d3d3dc05e1f9c804a733ccc6fc6f3a83e888c4cdfdea8a  openai-api-server-via-codex_0.2.2_darwin_arm64.tar.gz
+6614e6ac59d61a99db578fc2f20168264417151a26148b44efd29e2fb0ca9543  openai-api-server-via-codex_0.2.2_windows_amd64.zip
+500a14436b4c517a3db91be5d808f9d6c8d036f1b781051e54fc3012fe47e2b4  openai-api-server-via-codex_0.2.2_windows_arm64.zip

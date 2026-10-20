@@ -1,0 +1,3315 @@
+[
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dbbc89294ff7921faf9e05e3c3cc066d8fa88065",
+    "size": 258,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dbbc89294ff7921faf9e05e3c3cc066d8fa88065"
+  },
+  {
+    "path": ".verify",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2100f75ea8fc0d427e1a32f67166fba084f8d968",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/2100f75ea8fc0d427e1a32f67166fba084f8d968"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a7b61d13f373098bbae37aeff3846bb1da9111cd",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/a7b61d13f373098bbae37aeff3846bb1da9111cd"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/SHA256SUMS.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab30902d0694af00e6acd7ae44e13bed3bca9e85",
+    "size": 1376,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ab30902d0694af00e6acd7ae44e13bed3bca9e85"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-aurora-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a0a52fcc3a11d4fd1aad7e60808fa01fbff65335",
+    "size": 13706,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a0a52fcc3a11d4fd1aad7e60808fa01fbff65335"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-blue-fantasy-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a151cc251211a339eab012ec75e22054bff26ba5",
+    "size": 5086165,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a151cc251211a339eab012ec75e22054bff26ba5"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-deep-whale-day-night-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "44b72c97e19a53f7802729f23d11fd741f2fe6bb",
+    "size": 7531975,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/44b72c97e19a53f7802729f23d11fd741f2fe6bb"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-dragon-heir-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "defddce0b7e14d862a9e597b029d7727b22f92d2",
+    "size": 179728,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/defddce0b7e14d862a9e597b029d7727b22f92d2"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-inkwash-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eeb9af3ee39a44d363107bda261194dfab93fb5e",
+    "size": 8669,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/eeb9af3ee39a44d363107bda261194dfab93fb5e"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-maid-atelier-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1fe1d9b141507003f8382c92faecf6a4f4031149",
+    "size": 2518380,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1fe1d9b141507003f8382c92faecf6a4f4031149"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-miku-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4660c9a76d2746ccf429431322251fe9e8716549",
+    "size": 1725128,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4660c9a76d2746ccf429431322251fe9e8716549"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-minecraft-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cdd708db465f3434bd9a2089a075d4a107912a7a",
+    "size": 641033,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/cdd708db465f3434bd9a2089a075d4a107912a7a"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-qq98-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4dbe44bce479bf8232570c90267949524bba15b7",
+    "size": 860517,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4dbe44bce479bf8232570c90267949524bba15b7"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-ths-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d79234a3cf0ae7a2fcdc704429e648c88ae4dbed",
+    "size": 708867,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d79234a3cf0ae7a2fcdc704429e648c88ae4dbed"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-trading-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9c1d4ea44a1a111e859c428fc37003072a7ea48a",
+    "size": 21874,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9c1d4ea44a1a111e859c428fc37003072a7ea48a"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-whale-song-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e329231cce6425d509d30c40ec96513107b2a47f",
+    "size": 26332,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e329231cce6425d509d30c40ec96513107b2a47f"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-skin-xp-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ada4d92c4f406fb7ba22e9b5056c9b451a65310b",
+    "size": 596237,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ada4d92c4f406fb7ba22e9b5056c9b451a65310b"
+  },
+  {
+    "path": ".verify/pkgs-v1.1.0-final/dsh-eac-ui-skin-loader-1.1.0.tgz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8874a72c64b12a06d2b80c3a1fecefc2f3039a01",
+    "size": 22667,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8874a72c64b12a06d2b80c3a1fecefc2f3039a01"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fadaab71559ea7f5c48b30b43833cf05a80edad6",
+    "size": 10245,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fadaab71559ea7f5c48b30b43833cf05a80edad6"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0b30342d905bdb5b20bce5a92c0804526ba7dc74",
+    "size": 17758,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/0b30342d905bdb5b20bce5a92c0804526ba7dc74"
+  },
+  {
+    "path": "cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3b20f17fb95000d686d2c9103f2f54608f032830",
+    "size": 1053,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3b20f17fb95000d686d2c9103f2f54608f032830"
+  },
+  {
+    "path": "docs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9650de2b788713245f94d173c55ff473f63aef68",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/9650de2b788713245f94d173c55ff473f63aef68"
+  },
+  {
+    "path": "docs/api-notes.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "878356bd3d76a6665458939ba2268f2bacc05d09",
+    "size": 41078,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/878356bd3d76a6665458939ba2268f2bacc05d09"
+  },
+  {
+    "path": "docs/assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0a4889b74fd55f806bb510a4fbd7b6d8747a0e09",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/0a4889b74fd55f806bb510a4fbd7b6d8747a0e09"
+  },
+  {
+    "path": "docs/assets/EAC-skin-loader.svg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a4617687dd237f888d1a8b6d089834c1616b8d7",
+    "size": 12741,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3a4617687dd237f888d1a8b6d089834c1616b8d7"
+  },
+  {
+    "path": "docs/git-distribution.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3023f2f0ffd0d75d666ef0148bf929dacec6e36",
+    "size": 7762,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f3023f2f0ffd0d75d666ef0148bf929dacec6e36"
+  },
+  {
+    "path": "docs/images",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "65362f10612ac231521464b19a66ad70927cb66a",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/65362f10612ac231521464b19a66ad70927cb66a"
+  },
+  {
+    "path": "docs/images/21-aurora-active-settled.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f6ade5ffa089b73afdce1840680b825a86d9ecb8",
+    "size": 210746,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f6ade5ffa089b73afdce1840680b825a86d9ecb8"
+  },
+  {
+    "path": "docs/images/22-inkwash-active-settled.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97ca181fe83d099038c46aa8c8aa98365290454c",
+    "size": 181780,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/97ca181fe83d099038c46aa8c8aa98365290454c"
+  },
+  {
+    "path": "docs/images/30-trading-active-settled.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81c21f9e3586ed71813673bef90554a3fd4c5047",
+    "size": 144756,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/81c21f9e3586ed71813673bef90554a3fd4c5047"
+  },
+  {
+    "path": "docs/images/31-dragon-heir-active-settled.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5f554f687a6d7d2a912d449ba7a095eb7a07bfc3",
+    "size": 1019622,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5f554f687a6d7d2a912d449ba7a095eb7a07bfc3"
+  },
+  {
+    "path": "docs/images/32-whale-song-active-settled.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "081f351f7268aaf1c21979971032a8e8e48180b7",
+    "size": 256015,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/081f351f7268aaf1c21979971032a8e8e48180b7"
+  },
+  {
+    "path": "docs/images/37-panorama-five-skins-release.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "49076a400cb4b898f82b21febd3dc36c714196cd",
+    "size": 106286,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/49076a400cb4b898f82b21febd3dc36c714196cd"
+  },
+  {
+    "path": "docs/verification.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "090a0df5ecee9105393ea0760bc966fc4b57b483",
+    "size": 45263,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/090a0df5ecee9105393ea0760bc966fc4b57b483"
+  },
+  {
+    "path": "eslint.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "52fd496affd973b46e39ecb22fb2eb949c03e5e5",
+    "size": 3543,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/52fd496affd973b46e39ecb22fb2eb949c03e5e5"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "689fb3502e4873c40ff3980ce76acc321977cf9b",
+    "size": 1323,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/689fb3502e4873c40ff3980ce76acc321977cf9b"
+  },
+  {
+    "path": "packages",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "69b61c75c26f72e6e3dd6ea575d9f542ee6e1c1a",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/69b61c75c26f72e6e3dd6ea575d9f542ee6e1c1a"
+  },
+  {
+    "path": "packages/loader",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2bc694a01e8874165b9c5329903758df11cbbcef",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/2bc694a01e8874165b9c5329903758df11cbbcef"
+  },
+  {
+    "path": "packages/loader/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/loader/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ed4d86c65413d688db8ce02842613598696a6b0",
+    "size": 34,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3ed4d86c65413d688db8ce02842613598696a6b0"
+  },
+  {
+    "path": "packages/loader/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "02db3aa8c0da9d7ef01f7313388e86c251a03d5c",
+    "size": 1643,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/02db3aa8c0da9d7ef01f7313388e86c251a03d5c"
+  },
+  {
+    "path": "packages/loader/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60780a724ed599589c82a955f5a0ab08495d1862",
+    "size": 1240,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/60780a724ed599589c82a955f5a0ab08495d1862"
+  },
+  {
+    "path": "packages/loader/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "449355335da0ae4a9cd12841be37b1048394ad58",
+    "size": 645,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/449355335da0ae4a9cd12841be37b1048394ad58"
+  },
+  {
+    "path": "packages/loader/lib",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5937772936662873b900d044435c33b43d49f94e",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/5937772936662873b900d044435c33b43d49f94e"
+  },
+  {
+    "path": "packages/loader/lib/client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "11a3e865801fce14fb76c69f343fd2f5288af228",
+    "size": 84943,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/11a3e865801fce14fb76c69f343fd2f5288af228"
+  },
+  {
+    "path": "packages/loader/lib/index.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f0b9134c5c2b0f0578ff3174deb21594bc9d0bf",
+    "size": 25244,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/0f0b9134c5c2b0f0578ff3174deb21594bc9d0bf"
+  },
+  {
+    "path": "packages/loader/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dcfec17fd6d0f3486ad7cf495a428a1e4f9b8320",
+    "size": 1273,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dcfec17fd6d0f3486ad7cf495a428a1e4f9b8320"
+  },
+  {
+    "path": "packages/loader/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bfce622ac7fa242550251bf0bef771cc45b679ae",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/bfce622ac7fa242550251bf0bef771cc45b679ae"
+  },
+  {
+    "path": "packages/loader/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89d7a41a44bca8a9e21840905012637f9e13a034",
+    "size": 3279,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/89d7a41a44bca8a9e21840905012637f9e13a034"
+  },
+  {
+    "path": "packages/loader/scripts/generate-skin-manifest.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9503a184459778f6cfe36b118fef193b2f5ed139",
+    "size": 5201,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9503a184459778f6cfe36b118fef193b2f5ed139"
+  },
+  {
+    "path": "packages/loader/skin-manifest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed81b37d093bc9376abbd6401e053d4e0314f7e1",
+    "size": 5219,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ed81b37d093bc9376abbd6401e053d4e0314f7e1"
+  },
+  {
+    "path": "packages/loader/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "98342d1a1a550a0352a1b53df8f8cbedb0ca5187",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/98342d1a1a550a0352a1b53df8f8cbedb0ca5187"
+  },
+  {
+    "path": "packages/loader/src/adapter",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "91fcb7be692f51824c3ee94a4ba91eeae8b1cde9",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/91fcb7be692f51824c3ee94a4ba91eeae8b1cde9"
+  },
+  {
+    "path": "packages/loader/src/adapter/dsh-0.1.7-host.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "75a66ecff8a44d19157fc6cfbe46e25bb53bbd8f",
+    "size": 5671,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/75a66ecff8a44d19157fc6cfbe46e25bb53bbd8f"
+  },
+  {
+    "path": "packages/loader/src/adapter/dsh-0.1.7-host.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ee9a2dd98e5c4ea21a39014efe5988ed4b637e20",
+    "size": 5915,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ee9a2dd98e5c4ea21a39014efe5988ed4b637e20"
+  },
+  {
+    "path": "packages/loader/src/adapter/dsh-0.1.7.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "21fa6d678702461be8c603cdb683a4332fccdb9e",
+    "size": 27247,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/21fa6d678702461be8c603cdb683a4332fccdb9e"
+  },
+  {
+    "path": "packages/loader/src/adapter/dsh-0.1.7.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9c34051b01a78a380598b8903dc6cbf59a6fe971",
+    "size": 15859,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9c34051b01a78a380598b8903dc6cbf59a6fe971"
+  },
+  {
+    "path": "packages/loader/src/adapter/dsh-0.2.0-artifacts.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1d0cd18e5d759d7f5bfb83b047f3a76542e74097",
+    "size": 10712,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1d0cd18e5d759d7f5bfb83b047f3a76542e74097"
+  },
+  {
+    "path": "packages/loader/src/adapter/test-module-loader.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "30f728ebd716c201a6ad1139a088ea5167ec31b4",
+    "size": 1154,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/30f728ebd716c201a6ad1139a088ea5167ec31b4"
+  },
+  {
+    "path": "packages/loader/src/adapter/types.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d791f39508759df131f0ea05bc23da7e74b3ea8d",
+    "size": 12859,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d791f39508759df131f0ea05bc23da7e74b3ea8d"
+  },
+  {
+    "path": "packages/loader/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7d93be5bbb2b7b7bc666c514b5afe4be5f7985d0",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/7d93be5bbb2b7b7bc666c514b5afe4be5f7985d0"
+  },
+  {
+    "path": "packages/loader/src/client/console",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d155f23636c3a803327444b250e26c030db02953",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/d155f23636c3a803327444b250e26c030db02953"
+  },
+  {
+    "path": "packages/loader/src/client/console/accent.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "902f0fae46f7ab0922760a56ac18f3fb2256e8b8",
+    "size": 3583,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/902f0fae46f7ab0922760a56ac18f3fb2256e8b8"
+  },
+  {
+    "path": "packages/loader/src/client/console/accent.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab142f097e4ed8115c86c491253a01ee46304270",
+    "size": 4873,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ab142f097e4ed8115c86c491253a01ee46304270"
+  },
+  {
+    "path": "packages/loader/src/client/console/components.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "526395d887f173aab5fba10f8f064069191b64bf",
+    "size": 21154,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/526395d887f173aab5fba10f8f064069191b64bf"
+  },
+  {
+    "path": "packages/loader/src/client/console/console-logic.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "241a1c1787ef106c8d9efabe792916fe97a460f1",
+    "size": 7067,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/241a1c1787ef106c8d9efabe792916fe97a460f1"
+  },
+  {
+    "path": "packages/loader/src/client/console/env.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8bd84d74bf17d8c25bfd9940fe23d812e66667a8",
+    "size": 3152,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8bd84d74bf17d8c25bfd9940fe23d812e66667a8"
+  },
+  {
+    "path": "packages/loader/src/client/console/messages.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e8153ae54f07d3ddb8b4d1bebc8a3511471ddf79",
+    "size": 9071,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e8153ae54f07d3ddb8b4d1bebc8a3511471ddf79"
+  },
+  {
+    "path": "packages/loader/src/client/console/mount.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60fbae6df2eb4a5e3cf03ecc45843441b14bcf02",
+    "size": 6632,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/60fbae6df2eb4a5e3cf03ecc45843441b14bcf02"
+  },
+  {
+    "path": "packages/loader/src/client/console/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "69f456c0c7d5fe85d1991dd6359b7b7049ae99c8",
+    "size": 3358,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/69f456c0c7d5fe85d1991dd6359b7b7049ae99c8"
+  },
+  {
+    "path": "packages/loader/src/client/console/provisioning.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bc5ccad1867de043878e7cbbd6b16badc61f3b47",
+    "size": 6207,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/bc5ccad1867de043878e7cbbd6b16badc61f3b47"
+  },
+  {
+    "path": "packages/loader/src/client/console/styles.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6982480c54ac860ab4b3416adf7750ea7a26daf5",
+    "size": 14232,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6982480c54ac860ab4b3416adf7750ea7a26daf5"
+  },
+  {
+    "path": "packages/loader/src/client/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b714b595212b9a1533c2482f856b7b2e9b6c4c0b",
+    "size": 8323,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/b714b595212b9a1533c2482f856b7b2e9b6c4c0b"
+  },
+  {
+    "path": "packages/loader/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "024535ad8bea2bbdd682a87f2919c472bc0bdf9d",
+    "size": 1313,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/024535ad8bea2bbdd682a87f2919c472bc0bdf9d"
+  },
+  {
+    "path": "packages/loader/src/client/runtime",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d0f9efab8f385e5c638a11b1a7a6f1560c8f2ea5",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/d0f9efab8f385e5c638a11b1a7a6f1560c8f2ea5"
+  },
+  {
+    "path": "packages/loader/src/client/runtime/clock.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e359f507525d33aabd52ee44e6ea6415fdd7e194",
+    "size": 2323,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e359f507525d33aabd52ee44e6ea6415fdd7e194"
+  },
+  {
+    "path": "packages/loader/src/client/runtime/logger.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "28b29e2c6ff097cb84b387d6d1027c501179560c",
+    "size": 1333,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/28b29e2c6ff097cb84b387d6d1027c501179560c"
+  },
+  {
+    "path": "packages/loader/src/client/runtime/persistence.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9235d787901434db84bc0d3b5989111ab098eecc",
+    "size": 6839,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9235d787901434db84bc0d3b5989111ab098eecc"
+  },
+  {
+    "path": "packages/loader/src/client/runtime/runtime.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "113fd646baebb314bc35b66cfa9a2e8e993d38fc",
+    "size": 42920,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/113fd646baebb314bc35b66cfa9a2e8e993d38fc"
+  },
+  {
+    "path": "packages/loader/src/client/runtime/runtime.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7f87a9ab83f54353c24915926ff5f2df3f37f8b2",
+    "size": 38213,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7f87a9ab83f54353c24915926ff5f2df3f37f8b2"
+  },
+  {
+    "path": "packages/loader/src/client/wiring.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e3528dc94a649cb7d6340c5456f53d71e924660e",
+    "size": 2787,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e3528dc94a649cb7d6340c5456f53d71e924660e"
+  },
+  {
+    "path": "packages/loader/src/host",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f478911bb416a076814437c51b20eebf9abe362d",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f478911bb416a076814437c51b20eebf9abe362d"
+  },
+  {
+    "path": "packages/loader/src/host/provisioner.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3951d3056e17fd777635f9ab6ea6963b9fa32fad",
+    "size": 24070,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3951d3056e17fd777635f9ab6ea6963b9fa32fad"
+  },
+  {
+    "path": "packages/loader/src/host/provisioner.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "752f83688d9c39ebe4a894891824e290b1a6f863",
+    "size": 23265,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/752f83688d9c39ebe4a894891824e290b1a6f863"
+  },
+  {
+    "path": "packages/loader/src/host/provisioning-state.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e465e043f46b861794f14804028ac3c732f24617",
+    "size": 5149,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e465e043f46b861794f14804028ac3c732f24617"
+  },
+  {
+    "path": "packages/loader/src/host/skins-manifest.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2026f29c4221374abb6034ffc04557f903401a9f",
+    "size": 3173,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2026f29c4221374abb6034ffc04557f903401a9f"
+  },
+  {
+    "path": "packages/loader/src/host/skins-manifest.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58f918696bbb1760c48dfd6b741990d80a1ffa46",
+    "size": 7239,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/58f918696bbb1760c48dfd6b741990d80a1ffa46"
+  },
+  {
+    "path": "packages/loader/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "136b0800d631646500e69b972d5d3b852a48e280",
+    "size": 1015,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/136b0800d631646500e69b972d5d3b852a48e280"
+  },
+  {
+    "path": "packages/loader/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "91a164b9505aa2a54f777fc838c93855115b17dc",
+    "size": 4960,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/91a164b9505aa2a54f777fc838c93855115b17dc"
+  },
+  {
+    "path": "packages/loader/src/manifest.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e4f595fa4c2f882be6bc5b11133a85b845a781d6",
+    "size": 8988,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e4f595fa4c2f882be6bc5b11133a85b845a781d6"
+  },
+  {
+    "path": "packages/loader/src/protocol.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d70d7621b0c6316e0016d90183b0ad2a52d6b1c6",
+    "size": 8730,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d70d7621b0c6316e0016d90183b0ad2a52d6b1c6"
+  },
+  {
+    "path": "packages/loader/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "26d1f65cf894e1b494c2e7c4a0bbcab2dab82b3f",
+    "size": 163,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/26d1f65cf894e1b494c2e7c4a0bbcab2dab82b3f"
+  },
+  {
+    "path": "packages/skins",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0ff7a4988501156affa6674add18d07cc3097f5c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/0ff7a4988501156affa6674add18d07cc3097f5c"
+  },
+  {
+    "path": "packages/skins/aurora",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "da5886a09fe8731fbdd77258d233d19dc4d11890",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/da5886a09fe8731fbdd77258d233d19dc4d11890"
+  },
+  {
+    "path": "packages/skins/aurora/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/aurora/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ed4d86c65413d688db8ce02842613598696a6b0",
+    "size": 34,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3ed4d86c65413d688db8ce02842613598696a6b0"
+  },
+  {
+    "path": "packages/skins/aurora/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3247d7dc8b1bac7d109006777bf37e5dd9c91f89",
+    "size": 7906,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3247d7dc8b1bac7d109006777bf37e5dd9c91f89"
+  },
+  {
+    "path": "packages/skins/aurora/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c8f426a17dfb816b89f81ea6b49592fcc902aa94",
+    "size": 343,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c8f426a17dfb816b89f81ea6b49592fcc902aa94"
+  },
+  {
+    "path": "packages/skins/aurora/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "11f3e0832e82217feeed2a797d1ff38c7d03bafb",
+    "size": 837,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/11f3e0832e82217feeed2a797d1ff38c7d03bafb"
+  },
+  {
+    "path": "packages/skins/aurora/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2fabc140ddd1ed3eeeff9beb05a7dc633040a2dd",
+    "size": 2886,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2fabc140ddd1ed3eeeff9beb05a7dc633040a2dd"
+  },
+  {
+    "path": "packages/skins/aurora/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5fd3d56f0ca405a63baf6f56664c742c843edd83",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/5fd3d56f0ca405a63baf6f56664c742c843edd83"
+  },
+  {
+    "path": "packages/skins/aurora/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d4d7ef5c1d5d3391ea8a8235e1b48243933c733",
+    "size": 3321,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2d4d7ef5c1d5d3391ea8a8235e1b48243933c733"
+  },
+  {
+    "path": "packages/skins/aurora/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b1abea64f0b8bc078e8de3551d3a16783a83e2d6",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/b1abea64f0b8bc078e8de3551d3a16783a83e2d6"
+  },
+  {
+    "path": "packages/skins/aurora/src/background.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "32aa8fd72d36a7b7183dbb24da22336b62224fa2",
+    "size": 6257,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/32aa8fd72d36a7b7183dbb24da22336b62224fa2"
+  },
+  {
+    "path": "packages/skins/aurora/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a7794b6152bee3bc6a6765a5353ef040cde46687",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/a7794b6152bee3bc6a6765a5353ef040cde46687"
+  },
+  {
+    "path": "packages/skins/aurora/src/client/components.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eb5d6ee595439552405dd329a2f087a7e190d2fc",
+    "size": 7171,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/eb5d6ee595439552405dd329a2f087a7e190d2fc"
+  },
+  {
+    "path": "packages/skins/aurora/src/client/index.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "601c828d4cb8bd19a78be72b7eff62d117aae639",
+    "size": 2574,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/601c828d4cb8bd19a78be72b7eff62d117aae639"
+  },
+  {
+    "path": "packages/skins/aurora/src/client/messages.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e0e3327b70bfab964f91e42e436bc11f70c31600",
+    "size": 2964,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e0e3327b70bfab964f91e42e436bc11f70c31600"
+  },
+  {
+    "path": "packages/skins/aurora/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5204b4e59f3e52d0d9b59c843f5b1076d2dc6c1f",
+    "size": 14377,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5204b4e59f3e52d0d9b59c843f5b1076d2dc6c1f"
+  },
+  {
+    "path": "packages/skins/aurora/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a6f465425fb76db130b5f570d85878d23baefa3",
+    "size": 8213,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3a6f465425fb76db130b5f570d85878d23baefa3"
+  },
+  {
+    "path": "packages/skins/aurora/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12e217073be8808bd263674cdc7f21678411b671",
+    "size": 7852,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/12e217073be8808bd263674cdc7f21678411b671"
+  },
+  {
+    "path": "packages/skins/aurora/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3086ebce379492adc1054f75a1dc10752fd161b9",
+    "size": 2051,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3086ebce379492adc1054f75a1dc10752fd161b9"
+  },
+  {
+    "path": "packages/skins/aurora/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "317bbb3c3ece28b7cd7a74ddad4695144e80978d",
+    "size": 6827,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/317bbb3c3ece28b7cd7a74ddad4695144e80978d"
+  },
+  {
+    "path": "packages/skins/aurora/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "159d4adca6d5198767d708b9f4674bcd8806d2e9",
+    "size": 2398,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/159d4adca6d5198767d708b9f4674bcd8806d2e9"
+  },
+  {
+    "path": "packages/skins/aurora/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "14d7a00a9c4ffe59c952affd45a3892f251347e2",
+    "size": 2116,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/14d7a00a9c4ffe59c952affd45a3892f251347e2"
+  },
+  {
+    "path": "packages/skins/aurora/src/settings.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4bf0c654bce88dcf071459d17e96480c8dd94a5b",
+    "size": 2392,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4bf0c654bce88dcf071459d17e96480c8dd94a5b"
+  },
+  {
+    "path": "packages/skins/aurora/src/theme.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5876ebbe039c5b356baadad48efc049d2e26333d",
+    "size": 4582,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5876ebbe039c5b356baadad48efc049d2e26333d"
+  },
+  {
+    "path": "packages/skins/aurora/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e1230392db24336d95f0b49be626de9cdf57d5f",
+    "size": 166,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7e1230392db24336d95f0b49be626de9cdf57d5f"
+  },
+  {
+    "path": "packages/skins/blue-fantasy",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "da5152d2aa90393ba86b3f98f76b49ce0926739f",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/da5152d2aa90393ba86b3f98f76b49ce0926739f"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "04aac09752376eeb21e30c1871384c3dee35db17",
+    "size": 786,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/04aac09752376eeb21e30c1871384c3dee35db17"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23d218f215804cbe8b1ac8f39e09e5d644560a69",
+    "size": 3752,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/23d218f215804cbe8b1ac8f39e09e5d644560a69"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f4fd73c4973d5e962d95a6a61c3f97e11c086167",
+    "size": 166,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f4fd73c4973d5e962d95a6a61c3f97e11c086167"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6595c69577fb0d7955d655f398d81957f5ffd05e",
+    "size": 2574,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6595c69577fb0d7955d655f398d81957f5ffd05e"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "281bd4b25977b9d208636757aab852f3d23c540c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/281bd4b25977b9d208636757aab852f3d23c540c"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "40b1df7d412a45c9da2fbab9aef69a9825447d75",
+    "size": 2135863,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/40b1df7d412a45c9da2fbab9aef69a9825447d75"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fed42233b0e29b1771323826ab32f8cbbeb6b98d",
+    "size": 2716030,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fed42233b0e29b1771323826ab32f8cbbeb6b98d"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6eb456a4e4bfed67c581499f5b2d7bbba12d1af8",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/6eb456a4e4bfed67c581499f5b2d7bbba12d1af8"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e84970ab3227cbcb3ede33cafa724cefd7e9e46b",
+    "size": 2636,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e84970ab3227cbcb3ede33cafa724cefd7e9e46b"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "13e000d2f3428a0b070841e4086df5bd8225f26f",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/13e000d2f3428a0b070841e4086df5bd8225f26f"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fb28fb77730f2d9812ca5e2fd9e42cef14e25a0c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/fb28fb77730f2d9812ca5e2fd9e42cef14e25a0c"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7eeeffc4dbf96392cf4d51219c47abf726b1db82",
+    "size": 655,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7eeeffc4dbf96392cf4d51219c47abf726b1db82"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "caab9daf733d5adc697caa6659463f71a7afb777",
+    "size": 772,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/caab9daf733d5adc697caa6659463f71a7afb777"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "df5a63890e3f968ef455a55c47a806f91eba1c2b",
+    "size": 3972,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/df5a63890e3f968ef455a55c47a806f91eba1c2b"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7b80fad64ed21fa5b088f81a3f598220191661d9",
+    "size": 584,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7b80fad64ed21fa5b088f81a3f598220191661d9"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dda657f6ff2fe611e5568979c28c72a26549a5c6",
+    "size": 907,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dda657f6ff2fe611e5568979c28c72a26549a5c6"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f25537494b460282683b5ef59dd33c6c31dff1b3",
+    "size": 881,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f25537494b460282683b5ef59dd33c6c31dff1b3"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a91faf4e938ecc708e65fdbabefc17d70ad39e41",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/a91faf4e938ecc708e65fdbabefc17d70ad39e41"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba0dea2dbc86135c673017cf42a16d268120d958",
+    "size": 327030,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ba0dea2dbc86135c673017cf42a16d268120d958"
+  },
+  {
+    "path": "packages/skins/blue-fantasy/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b5917fc881bd99332659afbe4e18683e9376589f",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/b5917fc881bd99332659afbe4e18683e9376589f"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7cdbe0b482f604a06a0988dad8877ae8d9257f7d",
+    "size": 20850,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7cdbe0b482f604a06a0988dad8877ae8d9257f7d"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "24bcd1a458f5a6a8c7af32706dab6f7311471bfb",
+    "size": 2505,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/24bcd1a458f5a6a8c7af32706dab6f7311471bfb"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "404605ce3dbdb19f37c3c903039a5ff9bc7b7198",
+    "size": 305,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/404605ce3dbdb19f37c3c903039a5ff9bc7b7198"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4b3faad2da825a9a6d6fe5fe50ca06667a27cf95",
+    "size": 332,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4b3faad2da825a9a6d6fe5fe50ca06667a27cf95"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3472f6cb84ad3a3eb4146dace1c0058e83ce1ce",
+    "size": 103,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c3472f6cb84ad3a3eb4146dace1c0058e83ce1ce"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1dedd118709c19491a1e9907557c6f4a382c723d",
+    "size": 2580,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1dedd118709c19491a1e9907557c6f4a382c723d"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e708d4a0d129d8d1e5514db0fceaacc341fb822d",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e708d4a0d129d8d1e5514db0fceaacc341fb822d"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/preview/dark.webp",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "62ffa902de175198bf5435f8d0172821b86f5689",
+    "size": 169466,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/62ffa902de175198bf5435f8d0172821b86f5689"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/preview/light.webp",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e0ced10b5197b04d459bf97a5cf6dcaf97851ea1",
+    "size": 168440,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e0ced10b5197b04d459bf97a5cf6dcaf97851ea1"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9b4313d88001dde3af93595dcec793747d1d78f8",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/9b4313d88001dde3af93595dcec793747d1d78f8"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d783b7f4754b38de6ec09b888470b839c57319e3",
+    "size": 2660,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d783b7f4754b38de6ec09b888470b839c57319e3"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4e6afff51e96569ad4758ca039d0d645d1933e65",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/4e6afff51e96569ad4758ca039d0d645d1933e65"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ce3b2a70376c78a5d96e922afa61dacd13ae97c5",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/ce3b2a70376c78a5d96e922afa61dacd13ae97c5"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7fde448ead4abe17b17865a93fd25d698b324eb3",
+    "size": 684,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7fde448ead4abe17b17865a93fd25d698b324eb3"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e75331fa89ab8423e3ad7a5d243dc53dd6aa3ce0",
+    "size": 861,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e75331fa89ab8423e3ad7a5d243dc53dd6aa3ce0"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "463fd492d7ba5542798cf550ac4595472df9617b",
+    "size": 4181,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/463fd492d7ba5542798cf550ac4595472df9617b"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c51002db413c51f9c05b2bf4f89b64046b05b60",
+    "size": 1270,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5c51002db413c51f9c05b2bf4f89b64046b05b60"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4ea8271b06df96e3a3a21eb9d513d16fe632e656",
+    "size": 542,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4ea8271b06df96e3a3a21eb9d513d16fe632e656"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0483e654ba6bd5e5e531cb6db6e7ed4933e6052d",
+    "size": 923,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/0483e654ba6bd5e5e531cb6db6e7ed4933e6052d"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "847ce08c46fcae2dbda4d0773868691a81816624",
+    "size": 901,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/847ce08c46fcae2dbda4d0773868691a81816624"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5eaf422006c2e738f39e4fd6f5177bee478bc8a6",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/5eaf422006c2e738f39e4fd6f5177bee478bc8a6"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c69ad109f5e866d6e5e8c9347a75472fe76f281",
+    "size": 9718895,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5c69ad109f5e866d6e5e8c9347a75472fe76f281"
+  },
+  {
+    "path": "packages/skins/deep-whale-day-night/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/dragon-heir",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e9e29079d260fa660b101492a384fab0f36f9222",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e9e29079d260fa660b101492a384fab0f36f9222"
+  },
+  {
+    "path": "packages/skins/dragon-heir/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/dragon-heir/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/dragon-heir/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d2690e8fcc28356712b1dc9cc4b47ecdc72a07c6",
+    "size": 4837,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d2690e8fcc28356712b1dc9cc4b47ecdc72a07c6"
+  },
+  {
+    "path": "packages/skins/dragon-heir/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cfc8935eca321d402bca4f07ddb1893337d9b48e",
+    "size": 4165,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/cfc8935eca321d402bca4f07ddb1893337d9b48e"
+  },
+  {
+    "path": "packages/skins/dragon-heir/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "931f2d389bc52d0047f6871a46742aa219d92f0d",
+    "size": 764,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/931f2d389bc52d0047f6871a46742aa219d92f0d"
+  },
+  {
+    "path": "packages/skins/dragon-heir/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "64586888f266446c6e30fb5c5dbf283660755787",
+    "size": 3406,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/64586888f266446c6e30fb5c5dbf283660755787"
+  },
+  {
+    "path": "packages/skins/dragon-heir/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "dda6c472f6d250f22bdba9958efaa4b38f0b9de0",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/dda6c472f6d250f22bdba9958efaa4b38f0b9de0"
+  },
+  {
+    "path": "packages/skins/dragon-heir/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "292bbeb44f3f8927711007fb3319613d6ed3a464",
+    "size": 2633,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/292bbeb44f3f8927711007fb3319613d6ed3a464"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7522b729fda0cb340e27e75c26102ac947be9181",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/7522b729fda0cb340e27e75c26102ac947be9181"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "05bdfc9e9c84abda6378890280aeeeb1fc9cd8f9",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/05bdfc9e9c84abda6378890280aeeeb1fc9cd8f9"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "515cecad4d046caa1d0689bce085381c26be0321",
+    "size": 1545,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/515cecad4d046caa1d0689bce085381c26be0321"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "448775508b277840542527dc8acb55e90142466e",
+    "size": 13486,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/448775508b277840542527dc8acb55e90142466e"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f03c7c1cd113b1a2ed863a3cfd64c3ec03f2cd44",
+    "size": 8795,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f03c7c1cd113b1a2ed863a3cfd64c3ec03f2cd44"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cf08592f00a1531c0d14077e688908c9928318b7",
+    "size": 3460,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/cf08592f00a1531c0d14077e688908c9928318b7"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a6ce0757ff7be20be30c178f8ed1fd114bbe2bf",
+    "size": 2089,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/0a6ce0757ff7be20be30c178f8ed1fd114bbe2bf"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3041832442b335eeb337e9848b0872599bd5495",
+    "size": 4402,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c3041832442b335eeb337e9848b0872599bd5495"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "249aa813f11565d4256de2ed28cad315d9225d00",
+    "size": 599,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/249aa813f11565d4256de2ed28cad315d9225d00"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/markers.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8a2c7cfa98e32dfa9e6b5ab4e5f04679c73f8775",
+    "size": 1095,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8a2c7cfa98e32dfa9e6b5ab4e5f04679c73f8775"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9694355e76f9f3d781da27b9c84b952b5c421c2b",
+    "size": 2246,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9694355e76f9f3d781da27b9c84b952b5c421c2b"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "83c4aa89181db4394983579b7d674eafa28f4149",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/83c4aa89181db4394983579b7d674eafa28f4149"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e575a4076c605673921122f83f9b784c5819ee06",
+    "size": 702,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e575a4076c605673921122f83f9b784c5819ee06"
+  },
+  {
+    "path": "packages/skins/dragon-heir/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12ed7f530a4b22f674a23fa1e732756165f9ecee",
+    "size": 246235,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/12ed7f530a4b22f674a23fa1e732756165f9ecee"
+  },
+  {
+    "path": "packages/skins/dragon-heir/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53c3df9eea5c6dee3bc717a2f5886d36dddef3c5",
+    "size": 142,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/53c3df9eea5c6dee3bc717a2f5886d36dddef3c5"
+  },
+  {
+    "path": "packages/skins/inkwash",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7617b1693d5825dc46ef6a3d24b2c7054e08a5a8",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/7617b1693d5825dc46ef6a3d24b2c7054e08a5a8"
+  },
+  {
+    "path": "packages/skins/inkwash/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/inkwash/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ed4d86c65413d688db8ce02842613598696a6b0",
+    "size": 34,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3ed4d86c65413d688db8ce02842613598696a6b0"
+  },
+  {
+    "path": "packages/skins/inkwash/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6ce76c9457386db96cb0408a3b340f101b44ad81",
+    "size": 4622,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6ce76c9457386db96cb0408a3b340f101b44ad81"
+  },
+  {
+    "path": "packages/skins/inkwash/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "34da090d7488d81fd747cfff6b576bb37c3ec405",
+    "size": 344,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/34da090d7488d81fd747cfff6b576bb37c3ec405"
+  },
+  {
+    "path": "packages/skins/inkwash/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bab0fcff870ce00cc78f0f55780a0c93b3a820d1",
+    "size": 599,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/bab0fcff870ce00cc78f0f55780a0c93b3a820d1"
+  },
+  {
+    "path": "packages/skins/inkwash/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46ff29ef27e5c152426cf0160948bb2299f50bb2",
+    "size": 2882,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/46ff29ef27e5c152426cf0160948bb2299f50bb2"
+  },
+  {
+    "path": "packages/skins/inkwash/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "85d589eaa6707b40ef316c8926fd52982d7667f7",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/85d589eaa6707b40ef316c8926fd52982d7667f7"
+  },
+  {
+    "path": "packages/skins/inkwash/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9d71277c50416f1f2da7eac58be23462ae3ff8c9",
+    "size": 2359,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9d71277c50416f1f2da7eac58be23462ae3ff8c9"
+  },
+  {
+    "path": "packages/skins/inkwash/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "86e26d77a873808996f70c04450cbb9e7b5e5680",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/86e26d77a873808996f70c04450cbb9e7b5e5680"
+  },
+  {
+    "path": "packages/skins/inkwash/src/background.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8988d408b5b532eb97c86ddad02e7b01e46640fd",
+    "size": 2504,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8988d408b5b532eb97c86ddad02e7b01e46640fd"
+  },
+  {
+    "path": "packages/skins/inkwash/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6b640168931b0d441bf2cfcd868a1b05c723ee74",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/6b640168931b0d441bf2cfcd868a1b05c723ee74"
+  },
+  {
+    "path": "packages/skins/inkwash/src/client/components.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "35ff5ed3fd2319489597b24d762893945ed3bec7",
+    "size": 2441,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/35ff5ed3fd2319489597b24d762893945ed3bec7"
+  },
+  {
+    "path": "packages/skins/inkwash/src/client/index.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9641ac1b2666ea791efdd9384a78d9fdea551cb8",
+    "size": 1718,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9641ac1b2666ea791efdd9384a78d9fdea551cb8"
+  },
+  {
+    "path": "packages/skins/inkwash/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b27093fd93d66bd3cb6aaa55d9e5d6082914934",
+    "size": 7846,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5b27093fd93d66bd3cb6aaa55d9e5d6082914934"
+  },
+  {
+    "path": "packages/skins/inkwash/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7c0ff123e52f92eb5bff1916882ca5fdf1230286",
+    "size": 5354,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7c0ff123e52f92eb5bff1916882ca5fdf1230286"
+  },
+  {
+    "path": "packages/skins/inkwash/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "44aa461d7cef4243414f5a5fe74d7dd6b950760d",
+    "size": 4045,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/44aa461d7cef4243414f5a5fe74d7dd6b950760d"
+  },
+  {
+    "path": "packages/skins/inkwash/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "95fb223155d32e07b4cb91d412bf37d6ca3b9772",
+    "size": 1715,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/95fb223155d32e07b4cb91d412bf37d6ca3b9772"
+  },
+  {
+    "path": "packages/skins/inkwash/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a678816fd901f6b96a03d3752ca5ad30e5590aa9",
+    "size": 2408,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a678816fd901f6b96a03d3752ca5ad30e5590aa9"
+  },
+  {
+    "path": "packages/skins/inkwash/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "29b5e36841ae92b70b20efaf126094fc913c28da",
+    "size": 634,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/29b5e36841ae92b70b20efaf126094fc913c28da"
+  },
+  {
+    "path": "packages/skins/inkwash/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0fa5ea9846d0b45b3e25081972222c01acba2a78",
+    "size": 1870,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/0fa5ea9846d0b45b3e25081972222c01acba2a78"
+  },
+  {
+    "path": "packages/skins/inkwash/src/theme.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2b0328d15e4240f735540139778251455fe2c158",
+    "size": 2089,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2b0328d15e4240f735540139778251455fe2c158"
+  },
+  {
+    "path": "packages/skins/inkwash/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e1230392db24336d95f0b49be626de9cdf57d5f",
+    "size": 166,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7e1230392db24336d95f0b49be626de9cdf57d5f"
+  },
+  {
+    "path": "packages/skins/maid-atelier",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d0cc6944336a1e6cb289b069f96816fa43f9f06d",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/d0cc6944336a1e6cb289b069f96816fa43f9f06d"
+  },
+  {
+    "path": "packages/skins/maid-atelier/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7cdbe0b482f604a06a0988dad8877ae8d9257f7d",
+    "size": 20850,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7cdbe0b482f604a06a0988dad8877ae8d9257f7d"
+  },
+  {
+    "path": "packages/skins/maid-atelier/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c127b9dc24642e7c6b808ad12ba29c1fbdbb4c81",
+    "size": 1325,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c127b9dc24642e7c6b808ad12ba29c1fbdbb4c81"
+  },
+  {
+    "path": "packages/skins/maid-atelier/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "13271734bcb534535e2a8929949e4fde69b1816a",
+    "size": 860,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/13271734bcb534535e2a8929949e4fde69b1816a"
+  },
+  {
+    "path": "packages/skins/maid-atelier/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58d9239cefec25927e6fa88f071ebed183075546",
+    "size": 24504,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/58d9239cefec25927e6fa88f071ebed183075546"
+  },
+  {
+    "path": "packages/skins/maid-atelier/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "55171973bf3ab13664f81f5015000ece202b7d86",
+    "size": 166,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/55171973bf3ab13664f81f5015000ece202b7d86"
+  },
+  {
+    "path": "packages/skins/maid-atelier/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef4b41ba3a8bb482bc9cc5055dd585b5e760ac1e",
+    "size": 2606,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ef4b41ba3a8bb482bc9cc5055dd585b5e760ac1e"
+  },
+  {
+    "path": "packages/skins/maid-atelier/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c56a1564ced2be154e708558e3af33081ce7fb96",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/c56a1564ced2be154e708558e3af33081ce7fb96"
+  },
+  {
+    "path": "packages/skins/maid-atelier/preview/dark.webp",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ee027f5192dc85cb9acfca8e814c0f9bcd8f1bb",
+    "size": 257692,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3ee027f5192dc85cb9acfca8e814c0f9bcd8f1bb"
+  },
+  {
+    "path": "packages/skins/maid-atelier/preview/light.webp",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4c9b358661f8b92324943f1fa66fa2f23c47e195",
+    "size": 253094,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4c9b358661f8b92324943f1fa66fa2f23c47e195"
+  },
+  {
+    "path": "packages/skins/maid-atelier/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "66ae7f071b326ea59687c70588b145ddf81d31af",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/66ae7f071b326ea59687c70588b145ddf81d31af"
+  },
+  {
+    "path": "packages/skins/maid-atelier/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "93d92f58a80db3895388049a9207e57d56916619",
+    "size": 2636,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/93d92f58a80db3895388049a9207e57d56916619"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2f46cf18605990a5b52dc3cc5d6e2e082f813328",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/2f46cf18605990a5b52dc3cc5d6e2e082f813328"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f509090305fd8e6b28cd768dec4c16022b8aad32",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f509090305fd8e6b28cd768dec4c16022b8aad32"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "40d39c48f05912a975d0e953da2f00a9f47b086a",
+    "size": 655,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/40d39c48f05912a975d0e953da2f00a9f47b086a"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c275ff26de7ebcc680e2a2929cc46c117f50fdcb",
+    "size": 772,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c275ff26de7ebcc680e2a2929cc46c117f50fdcb"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "abc784564da5d3e1acaca4bff3cce3464755358c",
+    "size": 3981,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/abc784564da5d3e1acaca4bff3cce3464755358c"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "64ec76fa9ace751d8193a6029c6315ed5b66b497",
+    "size": 577,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/64ec76fa9ace751d8193a6029c6315ed5b66b497"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "40da5810b22d6f5d1c8acb7c258e46ff9a2263b2",
+    "size": 907,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/40da5810b22d6f5d1c8acb7c258e46ff9a2263b2"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "847ce08c46fcae2dbda4d0773868691a81816624",
+    "size": 901,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/847ce08c46fcae2dbda4d0773868691a81816624"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "873a1b9925d0eb89927723811468bc75389320d2",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/873a1b9925d0eb89927723811468bc75389320d2"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/maid-atelier/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "989a8e8fd4a6fc5496dbdb7902b14bb43ef6dcdb",
+    "size": 2710843,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/989a8e8fd4a6fc5496dbdb7902b14bb43ef6dcdb"
+  },
+  {
+    "path": "packages/skins/maid-atelier/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/miku",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bd61c06a4345d2f51a8732c4b8f3d747cc031098",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/bd61c06a4345d2f51a8732c4b8f3d747cc031098"
+  },
+  {
+    "path": "packages/skins/miku/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/miku/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/miku/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73cb7bac3baebe298ecc126f49a32c05bb4e8354",
+    "size": 762,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/73cb7bac3baebe298ecc126f49a32c05bb4e8354"
+  },
+  {
+    "path": "packages/skins/miku/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "649952f15328b1092474518b5e6feb5857f96248",
+    "size": 3733,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/649952f15328b1092474518b5e6feb5857f96248"
+  },
+  {
+    "path": "packages/skins/miku/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "65d2ce7ae192e494c5f1b3c709bf5afd842ad812",
+    "size": 150,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/65d2ce7ae192e494c5f1b3c709bf5afd842ad812"
+  },
+  {
+    "path": "packages/skins/miku/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9b55499431c0e3acd9af87728e6a4f921eea4d0d",
+    "size": 2578,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9b55499431c0e3acd9af87728e6a4f921eea4d0d"
+  },
+  {
+    "path": "packages/skins/miku/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4def0a1c17b2e5f685e1df65152f8008c4da3f29",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/4def0a1c17b2e5f685e1df65152f8008c4da3f29"
+  },
+  {
+    "path": "packages/skins/miku/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2547094a677f851ac5e01d76a5eea25408dfe107",
+    "size": 937319,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2547094a677f851ac5e01d76a5eea25408dfe107"
+  },
+  {
+    "path": "packages/skins/miku/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f3b8f7e8d08b3b5ac358d420277d9a8e0cfe1f9",
+    "size": 740715,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3f3b8f7e8d08b3b5ac358d420277d9a8e0cfe1f9"
+  },
+  {
+    "path": "packages/skins/miku/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "db06e20b3522dbbc19dc4c763fbdd1717f28f461",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/db06e20b3522dbbc19dc4c763fbdd1717f28f461"
+  },
+  {
+    "path": "packages/skins/miku/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fdedf5576800a7708a47a89f318d64521541e5a1",
+    "size": 2612,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fdedf5576800a7708a47a89f318d64521541e5a1"
+  },
+  {
+    "path": "packages/skins/miku/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "baad354d92fb9d2a478f6c55790b5e9817e0bcf6",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/baad354d92fb9d2a478f6c55790b5e9817e0bcf6"
+  },
+  {
+    "path": "packages/skins/miku/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "076e619b602234ea17f3265ef427ebbdcea45e83",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/076e619b602234ea17f3265ef427ebbdcea45e83"
+  },
+  {
+    "path": "packages/skins/miku/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e5b670bbd2ede6d6fe8af16e4cbdb34628d6f87c",
+    "size": 633,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e5b670bbd2ede6d6fe8af16e4cbdb34628d6f87c"
+  },
+  {
+    "path": "packages/skins/miku/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b4597f16d7a1d16273c02856c5b3a083f7aaf6d4",
+    "size": 750,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/b4597f16d7a1d16273c02856c5b3a083f7aaf6d4"
+  },
+  {
+    "path": "packages/skins/miku/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfa0ae59fb7cba8d73c1e404b65f302cf6c15dc0",
+    "size": 3935,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dfa0ae59fb7cba8d73c1e404b65f302cf6c15dc0"
+  },
+  {
+    "path": "packages/skins/miku/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/miku/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6442e28cb9c4c0a6a7334c7ee03b17a17883cfc4",
+    "size": 570,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6442e28cb9c4c0a6a7334c7ee03b17a17883cfc4"
+  },
+  {
+    "path": "packages/skins/miku/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3fa9bef0407650a8878a5cd272fb9e519792b38b",
+    "size": 891,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3fa9bef0407650a8878a5cd272fb9e519792b38b"
+  },
+  {
+    "path": "packages/skins/miku/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/miku/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd7461e45c2a35c25537b21e7ff30f9013adc6df",
+    "size": 897,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd7461e45c2a35c25537b21e7ff30f9013adc6df"
+  },
+  {
+    "path": "packages/skins/miku/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5d37fe550e458765673a6a30014df8ae866ce6f2",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/5d37fe550e458765673a6a30014df8ae866ce6f2"
+  },
+  {
+    "path": "packages/skins/miku/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/miku/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e9ea51078f86f994b0a353be013527fb10e9882c",
+    "size": 140157,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e9ea51078f86f994b0a353be013527fb10e9882c"
+  },
+  {
+    "path": "packages/skins/miku/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/minecraft",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e56ca9fb8ae7e5d51e95db5e69db8cfc08f9992f",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e56ca9fb8ae7e5d51e95db5e69db8cfc08f9992f"
+  },
+  {
+    "path": "packages/skins/minecraft/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/minecraft/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/minecraft/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e020d4a262123314d180e4b94a1e940facc84a31",
+    "size": 784,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e020d4a262123314d180e4b94a1e940facc84a31"
+  },
+  {
+    "path": "packages/skins/minecraft/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "002040bc7e58c8564e29d2204914918bc5d0e8c7",
+    "size": 3749,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/002040bc7e58c8564e29d2204914918bc5d0e8c7"
+  },
+  {
+    "path": "packages/skins/minecraft/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7c0869a23070d31c770400b6cf65feadca1a72cd",
+    "size": 160,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7c0869a23070d31c770400b6cf65feadca1a72cd"
+  },
+  {
+    "path": "packages/skins/minecraft/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cd8968ff09065a92559e1f64049938849912113c",
+    "size": 2571,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/cd8968ff09065a92559e1f64049938849912113c"
+  },
+  {
+    "path": "packages/skins/minecraft/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "969b0dbc277b0ee4118e7c6bfc253fd866694862",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/969b0dbc277b0ee4118e7c6bfc253fd866694862"
+  },
+  {
+    "path": "packages/skins/minecraft/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "27edc0ec33b70f69909e44f41dfcc27bb9c360c3",
+    "size": 274406,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/27edc0ec33b70f69909e44f41dfcc27bb9c360c3"
+  },
+  {
+    "path": "packages/skins/minecraft/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1e21cde98f0b141402ff5b87f3a2fd1b881a9a80",
+    "size": 371737,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1e21cde98f0b141402ff5b87f3a2fd1b881a9a80"
+  },
+  {
+    "path": "packages/skins/minecraft/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3809543545bd9599396ac0f409ad775d1756abf2",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/3809543545bd9599396ac0f409ad775d1756abf2"
+  },
+  {
+    "path": "packages/skins/minecraft/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7b1b422b99fa9e3a8641bbaf07d124f786bdfbb1",
+    "size": 2627,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7b1b422b99fa9e3a8641bbaf07d124f786bdfbb1"
+  },
+  {
+    "path": "packages/skins/minecraft/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "86a3577df7734ee0a05efcae06c3c0b5995dca64",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/86a3577df7734ee0a05efcae06c3c0b5995dca64"
+  },
+  {
+    "path": "packages/skins/minecraft/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "17811d8f4c128c60d747b3c2b2c022a2794a6540",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/17811d8f4c128c60d747b3c2b2c022a2794a6540"
+  },
+  {
+    "path": "packages/skins/minecraft/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "15df6668747fd2a024ccd9994fd91416e5990fe4",
+    "size": 648,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/15df6668747fd2a024ccd9994fd91416e5990fe4"
+  },
+  {
+    "path": "packages/skins/minecraft/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f0d816eaefe79921aa2126ab20e19d681fa51d7d",
+    "size": 765,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/f0d816eaefe79921aa2126ab20e19d681fa51d7d"
+  },
+  {
+    "path": "packages/skins/minecraft/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3564c4cddcddc43783f0566a3d2e629c73c1b774",
+    "size": 3964,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3564c4cddcddc43783f0566a3d2e629c73c1b774"
+  },
+  {
+    "path": "packages/skins/minecraft/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/minecraft/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60bb2ccc9ca611f172fe0c7add2bcd5660a5b165",
+    "size": 562,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/60bb2ccc9ca611f172fe0c7add2bcd5660a5b165"
+  },
+  {
+    "path": "packages/skins/minecraft/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e8366726cd0cf095d2aeb5ab4ba366c71bdae7c8",
+    "size": 901,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e8366726cd0cf095d2aeb5ab4ba366c71bdae7c8"
+  },
+  {
+    "path": "packages/skins/minecraft/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/minecraft/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a30db085d210b54b9a2b9d3da489571d63881461",
+    "size": 898,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a30db085d210b54b9a2b9d3da489571d63881461"
+  },
+  {
+    "path": "packages/skins/minecraft/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "96334a29c972696d33df9dec216064e98c44471f",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/96334a29c972696d33df9dec216064e98c44471f"
+  },
+  {
+    "path": "packages/skins/minecraft/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/minecraft/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bd6ba0377408495f02ccd47eb857e75dfd9562c1",
+    "size": 36939,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/bd6ba0377408495f02ccd47eb857e75dfd9562c1"
+  },
+  {
+    "path": "packages/skins/minecraft/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/qq98",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4dab84479e219c5467f71f8210946794610913e0",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/4dab84479e219c5467f71f8210946794610913e0"
+  },
+  {
+    "path": "packages/skins/qq98/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/qq98/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/qq98/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5355f70a85e8fa73a230141d70128faa066ea07a",
+    "size": 750,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5355f70a85e8fa73a230141d70128faa066ea07a"
+  },
+  {
+    "path": "packages/skins/qq98/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355064bf9425139cb4277a443138a55544bed870",
+    "size": 3718,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355064bf9425139cb4277a443138a55544bed870"
+  },
+  {
+    "path": "packages/skins/qq98/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "640e052fb7105dafd93d4206b5a4fa1d21c881ff",
+    "size": 150,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/640e052fb7105dafd93d4206b5a4fa1d21c881ff"
+  },
+  {
+    "path": "packages/skins/qq98/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6c1d10a70685dfe899b063b81ec13398ea9a082",
+    "size": 2477,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c6c1d10a70685dfe899b063b81ec13398ea9a082"
+  },
+  {
+    "path": "packages/skins/qq98/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "233eca066bc02ff57ff58e29af1dc57003e1daaa",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/233eca066bc02ff57ff58e29af1dc57003e1daaa"
+  },
+  {
+    "path": "packages/skins/qq98/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc8ba9a85cf8727c3d4b8dfcf473aa5c2133aafd",
+    "size": 426465,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fc8ba9a85cf8727c3d4b8dfcf473aa5c2133aafd"
+  },
+  {
+    "path": "packages/skins/qq98/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58acfa4aa30bdb708f3b6546c31dc68fa990fbae",
+    "size": 448335,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/58acfa4aa30bdb708f3b6546c31dc68fa990fbae"
+  },
+  {
+    "path": "packages/skins/qq98/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3ba8cb00c900744482a54ec5e6da580862a2fc44",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/3ba8cb00c900744482a54ec5e6da580862a2fc44"
+  },
+  {
+    "path": "packages/skins/qq98/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a19b34028bd327a794fd8cd4976cdac86b924daa",
+    "size": 2612,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a19b34028bd327a794fd8cd4976cdac86b924daa"
+  },
+  {
+    "path": "packages/skins/qq98/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f819ac2d1d722866eaa9c7bb06b663ec41e1e815",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f819ac2d1d722866eaa9c7bb06b663ec41e1e815"
+  },
+  {
+    "path": "packages/skins/qq98/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e6bcc8f9faa283d280a51b631d652753258b0a72",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e6bcc8f9faa283d280a51b631d652753258b0a72"
+  },
+  {
+    "path": "packages/skins/qq98/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "831330017f3913a0b7de2438c9bb5b584c681312",
+    "size": 633,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/831330017f3913a0b7de2438c9bb5b584c681312"
+  },
+  {
+    "path": "packages/skins/qq98/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a27bd5113af9dd79bbb7b0e68570dedeb922e926",
+    "size": 750,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a27bd5113af9dd79bbb7b0e68570dedeb922e926"
+  },
+  {
+    "path": "packages/skins/qq98/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2dd8168e668bcbf4d94330ed9704f455681f0997",
+    "size": 3924,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2dd8168e668bcbf4d94330ed9704f455681f0997"
+  },
+  {
+    "path": "packages/skins/qq98/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/qq98/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d022bfaf64e201108f87bdaf7b1331a9e2dc7862",
+    "size": 519,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d022bfaf64e201108f87bdaf7b1331a9e2dc7862"
+  },
+  {
+    "path": "packages/skins/qq98/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "827eb7690fa09a5d1f810573f9f87fde5764e923",
+    "size": 891,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/827eb7690fa09a5d1f810573f9f87fde5764e923"
+  },
+  {
+    "path": "packages/skins/qq98/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/qq98/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a4e2ba9211ac100509e26632578f714c4ee357ac",
+    "size": 873,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a4e2ba9211ac100509e26632578f714c4ee357ac"
+  },
+  {
+    "path": "packages/skins/qq98/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a1ff960dcfd8bc0502d567553ba724d1c645cb9c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/a1ff960dcfd8bc0502d567553ba724d1c645cb9c"
+  },
+  {
+    "path": "packages/skins/qq98/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/qq98/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8d93b88817e285cc397dff0ae7a3a95660ea3c57",
+    "size": 42544,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8d93b88817e285cc397dff0ae7a3a95660ea3c57"
+  },
+  {
+    "path": "packages/skins/qq98/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/ths",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7baf3b651c7116e97c8b4f207370cc1dfe41226e",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/7baf3b651c7116e97c8b4f207370cc1dfe41226e"
+  },
+  {
+    "path": "packages/skins/ths/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/ths/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/ths/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4fe27bb2c273c9ebc897f54fcc95a44e46fcedce",
+    "size": 751,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4fe27bb2c273c9ebc897f54fcc95a44e46fcedce"
+  },
+  {
+    "path": "packages/skins/ths/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "318502f8d8cf95b6bd2882edc26dfb510a832193",
+    "size": 3712,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/318502f8d8cf95b6bd2882edc26dfb510a832193"
+  },
+  {
+    "path": "packages/skins/ths/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6046047af141aa772c9b5e393c252a193c580bdb",
+    "size": 148,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6046047af141aa772c9b5e393c252a193c580bdb"
+  },
+  {
+    "path": "packages/skins/ths/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8907661d937a9f5f128d6c7c224fe08bc89b18da",
+    "size": 2456,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8907661d937a9f5f128d6c7c224fe08bc89b18da"
+  },
+  {
+    "path": "packages/skins/ths/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fd77389d2b426e949fbc7357e953b248e96557a9",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/fd77389d2b426e949fbc7357e953b248e96557a9"
+  },
+  {
+    "path": "packages/skins/ths/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a39246cc414c16a89e0d7e207bdfd638d7ce960",
+    "size": 356966,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1a39246cc414c16a89e0d7e207bdfd638d7ce960"
+  },
+  {
+    "path": "packages/skins/ths/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b396bed091f8492c509f21ba5119198a20477591",
+    "size": 375570,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/b396bed091f8492c509f21ba5119198a20477591"
+  },
+  {
+    "path": "packages/skins/ths/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "13c8dc86e2eaee50cc20d2d30976876036ffedc8",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/13c8dc86e2eaee50cc20d2d30976876036ffedc8"
+  },
+  {
+    "path": "packages/skins/ths/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d74a228c348b615a7d0b9497d4e3197434f7e3cb",
+    "size": 2609,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d74a228c348b615a7d0b9497d4e3197434f7e3cb"
+  },
+  {
+    "path": "packages/skins/ths/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e4e5063f3b19ac740764f6293f7aa9c5eba16b71",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e4e5063f3b19ac740764f6293f7aa9c5eba16b71"
+  },
+  {
+    "path": "packages/skins/ths/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e6f115d031179439c9462cf6c5439856ca75a23c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e6f115d031179439c9462cf6c5439856ca75a23c"
+  },
+  {
+    "path": "packages/skins/ths/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8747c009c4b097311cd73a9852f5dfcb43179ac9",
+    "size": 630,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8747c009c4b097311cd73a9852f5dfcb43179ac9"
+  },
+  {
+    "path": "packages/skins/ths/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1b728aade0cc3ed2ec94e72600c7fc58e92f55ce",
+    "size": 747,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1b728aade0cc3ed2ec94e72600c7fc58e92f55ce"
+  },
+  {
+    "path": "packages/skins/ths/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5fd65cbd627207556375acf6759741e5c1698146",
+    "size": 3915,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/5fd65cbd627207556375acf6759741e5c1698146"
+  },
+  {
+    "path": "packages/skins/ths/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/ths/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9bbc8db9516840f58785c0177ce24177c01a7be4",
+    "size": 503,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9bbc8db9516840f58785c0177ce24177c01a7be4"
+  },
+  {
+    "path": "packages/skins/ths/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "57b0ec3bae9e8d6e610609621f1cc4558de60874",
+    "size": 889,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/57b0ec3bae9e8d6e610609621f1cc4558de60874"
+  },
+  {
+    "path": "packages/skins/ths/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/ths/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6ac4a6f8c1e9ec8eb8b6e18e16c1ab08f2828768",
+    "size": 876,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/6ac4a6f8c1e9ec8eb8b6e18e16c1ab08f2828768"
+  },
+  {
+    "path": "packages/skins/ths/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7d6c0c10f3239d9625bed97baee35af88df028b4",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/7d6c0c10f3239d9625bed97baee35af88df028b4"
+  },
+  {
+    "path": "packages/skins/ths/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/ths/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "406c20ce857ab260bfee7a4da10983aba0f41e47",
+    "size": 41142,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/406c20ce857ab260bfee7a4da10983aba0f41e47"
+  },
+  {
+    "path": "packages/skins/ths/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "packages/skins/trading",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "34c3802f28d36b43e8b7f1fc780ba0fc57835fa5",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/34c3802f28d36b43e8b7f1fc780ba0fc57835fa5"
+  },
+  {
+    "path": "packages/skins/trading/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/trading/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/trading/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6699b5a470981fec0492f798bb0c497b8656c8f",
+    "size": 5055,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/b6699b5a470981fec0492f798bb0c497b8656c8f"
+  },
+  {
+    "path": "packages/skins/trading/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea1cdccc3fb148d7aebe092cd72412a03f462e75",
+    "size": 3674,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ea1cdccc3fb148d7aebe092cd72412a03f462e75"
+  },
+  {
+    "path": "packages/skins/trading/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3b200fc4e82068c4884322c4f19331b67991451d",
+    "size": 732,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/3b200fc4e82068c4884322c4f19331b67991451d"
+  },
+  {
+    "path": "packages/skins/trading/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "be0d4e68513dd8c14cac741805f5a3bf5b875bbb",
+    "size": 3535,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/be0d4e68513dd8c14cac741805f5a3bf5b875bbb"
+  },
+  {
+    "path": "packages/skins/trading/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f236de6c826852f2a2880651e031fce5810e6793",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f236de6c826852f2a2880651e031fce5810e6793"
+  },
+  {
+    "path": "packages/skins/trading/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "deaeaabb1d0e5007d0afd931f0e3699453ea7515",
+    "size": 2621,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/deaeaabb1d0e5007d0afd931f0e3699453ea7515"
+  },
+  {
+    "path": "packages/skins/trading/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "564c69ce54bc02f348ed38be4342a53e27e24ac0",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/564c69ce54bc02f348ed38be4342a53e27e24ac0"
+  },
+  {
+    "path": "packages/skins/trading/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "084c8a0157f9de9ddf7931ace785d4c68897ba68",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/084c8a0157f9de9ddf7931ace785d4c68897ba68"
+  },
+  {
+    "path": "packages/skins/trading/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1879f7f085f1968b9cf2a5b911670785ee5c0d34",
+    "size": 1523,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1879f7f085f1968b9cf2a5b911670785ee5c0d34"
+  },
+  {
+    "path": "packages/skins/trading/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "08e70b0af336668a669a938c5924b56f4b31a0f1",
+    "size": 13291,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/08e70b0af336668a669a938c5924b56f4b31a0f1"
+  },
+  {
+    "path": "packages/skins/trading/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a13d593be48af5dcfb9a6487c0156ccd3aacc5d",
+    "size": 10479,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1a13d593be48af5dcfb9a6487c0156ccd3aacc5d"
+  },
+  {
+    "path": "packages/skins/trading/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "547f9c3d0e835f4340ed9d7f4acc8b5ecaba3d62",
+    "size": 3456,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/547f9c3d0e835f4340ed9d7f4acc8b5ecaba3d62"
+  },
+  {
+    "path": "packages/skins/trading/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81cad615acf7e1978755822dd73afb1e896aa807",
+    "size": 2026,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/81cad615acf7e1978755822dd73afb1e896aa807"
+  },
+  {
+    "path": "packages/skins/trading/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "898a8a2959cab0ad9f2a70935fb0ed3a0271e2a5",
+    "size": 4140,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/898a8a2959cab0ad9f2a70935fb0ed3a0271e2a5"
+  },
+  {
+    "path": "packages/skins/trading/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bd11c412f5c77bd94f4aa28f309d0fbfb06a42eb",
+    "size": 587,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/bd11c412f5c77bd94f4aa28f309d0fbfb06a42eb"
+  },
+  {
+    "path": "packages/skins/trading/src/markers.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dd23d2e7cbc3594b2c262e8046abd2949b7a3675",
+    "size": 988,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dd23d2e7cbc3594b2c262e8046abd2949b7a3675"
+  },
+  {
+    "path": "packages/skins/trading/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a793d2d9576543adb406ffea91c080ed9da22e63",
+    "size": 2356,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a793d2d9576543adb406ffea91c080ed9da22e63"
+  },
+  {
+    "path": "packages/skins/trading/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "14c9ed7df9d4dbb29db91d7c94a16a3b6f5be52c",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/14c9ed7df9d4dbb29db91d7c94a16a3b6f5be52c"
+  },
+  {
+    "path": "packages/skins/trading/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e575a4076c605673921122f83f9b784c5819ee06",
+    "size": 702,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e575a4076c605673921122f83f9b784c5819ee06"
+  },
+  {
+    "path": "packages/skins/trading/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "776c14587e0d6596cad428d1c790491fcf07ada0",
+    "size": 49762,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/776c14587e0d6596cad428d1c790491fcf07ada0"
+  },
+  {
+    "path": "packages/skins/trading/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53c3df9eea5c6dee3bc717a2f5886d36dddef3c5",
+    "size": 142,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/53c3df9eea5c6dee3bc717a2f5886d36dddef3c5"
+  },
+  {
+    "path": "packages/skins/whale-song",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4a962ffffa5c4431ed62437b02eb3dec4281e250",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/4a962ffffa5c4431ed62437b02eb3dec4281e250"
+  },
+  {
+    "path": "packages/skins/whale-song/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/whale-song/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/whale-song/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "64a549f4cd0e854bb8c15b8f9fbfdd909a75a743",
+    "size": 5641,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/64a549f4cd0e854bb8c15b8f9fbfdd909a75a743"
+  },
+  {
+    "path": "packages/skins/whale-song/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7f8e52bf50028626e724eb70feb3115deb396634",
+    "size": 4923,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7f8e52bf50028626e724eb70feb3115deb396634"
+  },
+  {
+    "path": "packages/skins/whale-song/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4328cc22f5046f83599578893d5dc5d26e0520a5",
+    "size": 756,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4328cc22f5046f83599578893d5dc5d26e0520a5"
+  },
+  {
+    "path": "packages/skins/whale-song/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f227d5a407536251e2d92ab204be8cb4c46399c",
+    "size": 3597,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f227d5a407536251e2d92ab204be8cb4c46399c"
+  },
+  {
+    "path": "packages/skins/whale-song/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "177ad268bd255ea0db2f93625b5fa36012cf91c2",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/177ad268bd255ea0db2f93625b5fa36012cf91c2"
+  },
+  {
+    "path": "packages/skins/whale-song/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "80f77e84d7e952dc7a8d7751e7388c84681ba963",
+    "size": 2630,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/80f77e84d7e952dc7a8d7751e7388c84681ba963"
+  },
+  {
+    "path": "packages/skins/whale-song/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e372bca0f4c223a3af5f9a61098d1c1f6a4b5c06",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e372bca0f4c223a3af5f9a61098d1c1f6a4b5c06"
+  },
+  {
+    "path": "packages/skins/whale-song/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "333374b2ed64ad3aa85e61f94b22e00bb9325ef0",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/333374b2ed64ad3aa85e61f94b22e00bb9325ef0"
+  },
+  {
+    "path": "packages/skins/whale-song/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "16b65bce9144c7e7bd7237f25b88572c391c6bb2",
+    "size": 1539,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/16b65bce9144c7e7bd7237f25b88572c391c6bb2"
+  },
+  {
+    "path": "packages/skins/whale-song/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2a4955a6e62243c001455c67fb05f7a43e04fb1",
+    "size": 13757,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c2a4955a6e62243c001455c67fb05f7a43e04fb1"
+  },
+  {
+    "path": "packages/skins/whale-song/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "75739748cd976c49806b02f8e759604d1dd01471",
+    "size": 9425,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/75739748cd976c49806b02f8e759604d1dd01471"
+  },
+  {
+    "path": "packages/skins/whale-song/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46bb4159ee0228399ce2aff242b3599874e44005",
+    "size": 3459,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/46bb4159ee0228399ce2aff242b3599874e44005"
+  },
+  {
+    "path": "packages/skins/whale-song/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "005d354261ca4e4fa0e09ca7206e2dd13588ac7d",
+    "size": 2158,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/005d354261ca4e4fa0e09ca7206e2dd13588ac7d"
+  },
+  {
+    "path": "packages/skins/whale-song/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9cf4199e352a83e669fed4ee5e44d1f031433363",
+    "size": 4672,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9cf4199e352a83e669fed4ee5e44d1f031433363"
+  },
+  {
+    "path": "packages/skins/whale-song/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "92d1503f2c98e140d9a2dac0420a6b708c55cf6d",
+    "size": 596,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/92d1503f2c98e140d9a2dac0420a6b708c55cf6d"
+  },
+  {
+    "path": "packages/skins/whale-song/src/markers.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cb7b6177b9f71396d9228e60965468c09ed37b25",
+    "size": 1091,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/cb7b6177b9f71396d9228e60965468c09ed37b25"
+  },
+  {
+    "path": "packages/skins/whale-song/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dc9792d3a7e2a076021e960d5b2a393a7dc08da0",
+    "size": 2527,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dc9792d3a7e2a076021e960d5b2a393a7dc08da0"
+  },
+  {
+    "path": "packages/skins/whale-song/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8dd73f8301fd4ba05816ed9ecac2927adc4d786a",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/8dd73f8301fd4ba05816ed9ecac2927adc4d786a"
+  },
+  {
+    "path": "packages/skins/whale-song/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e575a4076c605673921122f83f9b784c5819ee06",
+    "size": 702,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/e575a4076c605673921122f83f9b784c5819ee06"
+  },
+  {
+    "path": "packages/skins/whale-song/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1421767ae55da45f1e4dabf6c99e45670a4afbfb",
+    "size": 42359,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/1421767ae55da45f1e4dabf6c99e45670a4afbfb"
+  },
+  {
+    "path": "packages/skins/whale-song/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53c3df9eea5c6dee3bc717a2f5886d36dddef3c5",
+    "size": 142,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/53c3df9eea5c6dee3bc717a2f5886d36dddef3c5"
+  },
+  {
+    "path": "packages/skins/xp",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f438c92ab07de42df73d67ee1ffb876e14f235dc",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f438c92ab07de42df73d67ee1ffb876e14f235dc"
+  },
+  {
+    "path": "packages/skins/xp/LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "489ed55a9458c70e0733431ad16d4293181a9523",
+    "size": 1080,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/489ed55a9458c70e0733431ad16d4293181a9523"
+  },
+  {
+    "path": "packages/skins/xp/NOTICE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd674136195478eac50ab24cb5a8ff105886abf3",
+    "size": 1521,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fd674136195478eac50ab24cb5a8ff105886abf3"
+  },
+  {
+    "path": "packages/skins/xp/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bfe81e5ba0f919b7cc77d0f2e4754ead9143f55d",
+    "size": 744,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/bfe81e5ba0f919b7cc77d0f2e4754ead9143f55d"
+  },
+  {
+    "path": "packages/skins/xp/THIRD-PARTY-NOTICES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "42b428311a0bd1560433bde821a870ca65879504",
+    "size": 3709,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/42b428311a0bd1560433bde821a870ca65879504"
+  },
+  {
+    "path": "packages/skins/xp/cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23f6255b48b36185a1fda6deb29b996a366c2995",
+    "size": 146,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/23f6255b48b36185a1fda6deb29b996a366c2995"
+  },
+  {
+    "path": "packages/skins/xp/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b06826d5394ba90a7eadceadbbda218e03fcb97d",
+    "size": 2505,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/b06826d5394ba90a7eadceadbbda218e03fcb97d"
+  },
+  {
+    "path": "packages/skins/xp/preview",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "412764964051148bf1b618cd66cbf4016a08e3b5",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/412764964051148bf1b618cd66cbf4016a08e3b5"
+  },
+  {
+    "path": "packages/skins/xp/preview/dark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7284a9b63789121955dd7741ac847e03cdcb6a85",
+    "size": 286601,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/7284a9b63789121955dd7741ac847e03cdcb6a85"
+  },
+  {
+    "path": "packages/skins/xp/preview/light.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2630f547dd370bc57d11a2fb08f09926d07f01b1",
+    "size": 320280,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/2630f547dd370bc57d11a2fb08f09926d07f01b1"
+  },
+  {
+    "path": "packages/skins/xp/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f0b9a92ccb515b97d3af3821b60b35bae6ca2562",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/f0b9a92ccb515b97d3af3821b60b35bae6ca2562"
+  },
+  {
+    "path": "packages/skins/xp/scripts/build-artifact.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "acce568976604c1457b564f0ab49eba812c61502",
+    "size": 2606,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/acce568976604c1457b564f0ab49eba812c61502"
+  },
+  {
+    "path": "packages/skins/xp/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e97553b40de430e702457a81de818b30d7b84d55",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/e97553b40de430e702457a81de818b30d7b84d55"
+  },
+  {
+    "path": "packages/skins/xp/src/client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "45bff519f6c284532b00a6609ec6eeb105bcf688",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/45bff519f6c284532b00a6609ec6eeb105bcf688"
+  },
+  {
+    "path": "packages/skins/xp/src/client/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4203b9f67889757be1ed962b299ece762e322474",
+    "size": 627,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/4203b9f67889757be1ed962b299ece762e322474"
+  },
+  {
+    "path": "packages/skins/xp/src/client/session.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfcfb48c670bff6def3112b6e495c4d8e9b3e530",
+    "size": 744,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/dfcfb48c670bff6def3112b6e495c4d8e9b3e530"
+  },
+  {
+    "path": "packages/skins/xp/src/client/session.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8d5c1d9956b51273c16f82f777fb0f16570c2747",
+    "size": 3910,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/8d5c1d9956b51273c16f82f777fb0f16570c2747"
+  },
+  {
+    "path": "packages/skins/xp/src/context.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f9b918415ad58157ecb81e2b672c7191c2a436f",
+    "size": 1137,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9f9b918415ad58157ecb81e2b672c7191c2a436f"
+  },
+  {
+    "path": "packages/skins/xp/src/identity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a6827aee2d950fce006385c1b3407c1c518fea61",
+    "size": 530,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/a6827aee2d950fce006385c1b3407c1c518fea61"
+  },
+  {
+    "path": "packages/skins/xp/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9fec101716565c89cec006f9e65d23660d140a21",
+    "size": 887,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/9fec101716565c89cec006f9e65d23660d140a21"
+  },
+  {
+    "path": "packages/skins/xp/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "355ced461aaf4dd237492fd0e6e745bd021b8625",
+    "size": 33,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/355ced461aaf4dd237492fd0e6e745bd021b8625"
+  },
+  {
+    "path": "packages/skins/xp/src/preview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "32eb467f58fb22b8df94d20debdc65a29abf6aab",
+    "size": 874,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/32eb467f58fb22b8df94d20debdc65a29abf6aab"
+  },
+  {
+    "path": "packages/skins/xp/src/vendor",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2204f3df9e16702e3526315fd89ad7d21d5670bb",
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/trees/2204f3df9e16702e3526315fd89ad7d21d5670bb"
+  },
+  {
+    "path": "packages/skins/xp/src/vendor/dsh-web-ui-client.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa16d9dde8f0abca0aa1ae1086e568252139a7d0",
+    "size": 138,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/fa16d9dde8f0abca0aa1ae1086e568252139a7d0"
+  },
+  {
+    "path": "packages/skins/xp/src/vendor/dsh-web-ui-client.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "31d76fbde63ba1e97f10361801bed7afd5596491",
+    "size": 42899,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/31d76fbde63ba1e97f10361801bed7afd5596491"
+  },
+  {
+    "path": "packages/skins/xp/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecc27bdcf86362b69f0df28216d18126530d6c41",
+    "size": 136,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ecc27bdcf86362b69f0df28216d18126530d6c41"
+  },
+  {
+    "path": "pnpm-lock.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c74257ff202b651f305b682bc9bc6df3280e7c46",
+    "size": 31543,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/c74257ff202b651f305b682bc9bc6df3280e7c46"
+  },
+  {
+    "path": "pnpm-workspace.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d31068194cd8b0674e57bc2114fb09c3e2d5d997",
+    "size": 361,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/d31068194cd8b0674e57bc2114fb09c3e2d5d997"
+  },
+  {
+    "path": "tsconfig.base.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef5e63022abab5d1cb833174b759ad81c0046004",
+    "size": 415,
+    "url": "https://api.github.com/repos/Ebony-Vinyl/EAC-skin-loader/git/blobs/ef5e63022abab5d1cb833174b759ad81c0046004"
+  }
+]

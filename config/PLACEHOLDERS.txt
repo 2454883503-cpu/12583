@@ -1,0 +1,21 @@
+# 同步仓库占位符说明（给 setup.ps1 用）
+#
+# 仓库里所有"跟某一台电脑有关"的绝对路径都换成了下面的占位符，
+# setup.ps1 会在另一台机器上按本机实际位置替换回来。
+# 只有 config/ 目录里的占位符是有意义的；其它目录保持原样。
+
+@DSH_COMPONENTS@   = 本仓库根目录的绝对路径（正斜杠）
+                     例：D:/AA12583/dsh/组件      换机器后可能是 E:/dsh/组件
+@COMPONENT_URI@    = 同一个目录的 file:// URI（已做百分号编码，可直接塞进 YAML 的
+                     'file://...' 模块地址里；路径含中文时必须有这一步）
+                     例：file:///D:/AA12583/dsh/%E7%BB%84%E4%BB%B6
+@USERPROFILE@      = 当前用户目录（正斜杠）
+                     例：C:/Users/tanyu
+@WORKBUDDY_PLUGIN@ = dsh-plugin-workbuddy 的实际目录（正斜杠）
+                     优先用仓库里的 workbuddy-to-dsh/dsh-plugin；
+                     若本机另有独立开发目录（%USERPROFILE%\workbuddy-to-dsh\dsh-plugin），
+                     脚本会自动优先用那个。
+
+为什么统一用正斜杠：
+  YAML 双引号字符串里反斜杠要转义，而正斜杠在 Windows 的 file:// URL、
+  Node 的 fs 模块、pnpm 的 link: 依赖里都能直接使用，不会踩转义坑。

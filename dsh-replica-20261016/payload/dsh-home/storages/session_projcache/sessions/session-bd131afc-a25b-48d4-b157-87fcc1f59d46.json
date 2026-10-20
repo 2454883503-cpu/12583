@@ -1,0 +1,781 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792140657944,
+      "cwd": "D:\\AA12583\\dsh\\组件",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 289,
+        "val": "打包DeepSeek harness改动状态"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 289,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "帮我打包目前所有改动，以便我在另一台电脑上使用deepseek harness时，可以复刻现在的所有状态，先生成计划，先不要打包"
+          },
+          "count": 2,
+          "lastSeq": 150
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 289,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 289,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 289,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 47984,
+            "outputTokens": 29232,
+            "cacheReadTokens": 1733376,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 20,
+            "buckets": {
+              "uncachedInputTokens": 199,
+              "outputTokens": 304,
+              "cacheReadTokens": 78848,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 289,
+        "val": {
+          "surfaceTokens": 60998,
+          "contextWindow": 1000000,
+          "pressureTokens": 79047,
+          "sampledSurfaceTokens": 55473
+        }
+      },
+      "contextBreakdown": {
+        "ver": 5,
+        "seq": 289,
+        "val": {
+          "nodes": [
+            {
+              "seq": 7,
+              "heuristicTokens": 1483,
+              "system": true
+            },
+            {
+              "seq": 8,
+              "heuristicTokens": 24,
+              "system": false
+            },
+            {
+              "seq": 9,
+              "heuristicTokens": 124,
+              "system": false
+            },
+            {
+              "seq": 10,
+              "heuristicTokens": 556,
+              "system": false
+            },
+            {
+              "seq": 18,
+              "heuristicTokens": 237,
+              "system": false
+            },
+            {
+              "seq": 20,
+              "heuristicTokens": 295,
+              "system": false
+            },
+            {
+              "seq": 22,
+              "heuristicTokens": 139,
+              "system": false
+            },
+            {
+              "seq": 26,
+              "heuristicTokens": 233,
+              "system": false
+            },
+            {
+              "seq": 28,
+              "heuristicTokens": 467,
+              "system": false
+            },
+            {
+              "seq": 30,
+              "heuristicTokens": 495,
+              "system": false
+            },
+            {
+              "seq": 34,
+              "heuristicTokens": 352,
+              "system": false
+            },
+            {
+              "seq": 36,
+              "heuristicTokens": 234,
+              "system": false
+            },
+            {
+              "seq": 38,
+              "heuristicTokens": 630,
+              "system": false
+            },
+            {
+              "seq": 42,
+              "heuristicTokens": 450,
+              "system": false
+            },
+            {
+              "seq": 44,
+              "heuristicTokens": 3710,
+              "system": false
+            },
+            {
+              "seq": 46,
+              "heuristicTokens": 46,
+              "system": false
+            },
+            {
+              "seq": 50,
+              "heuristicTokens": 283,
+              "system": false
+            },
+            {
+              "seq": 52,
+              "heuristicTokens": 779,
+              "system": false
+            },
+            {
+              "seq": 54,
+              "heuristicTokens": 455,
+              "system": false
+            },
+            {
+              "seq": 58,
+              "heuristicTokens": 597,
+              "system": false
+            },
+            {
+              "seq": 60,
+              "heuristicTokens": 370,
+              "system": false
+            },
+            {
+              "seq": 62,
+              "heuristicTokens": 237,
+              "system": false
+            },
+            {
+              "seq": 66,
+              "heuristicTokens": 352,
+              "system": false
+            },
+            {
+              "seq": 68,
+              "heuristicTokens": 578,
+              "system": false
+            },
+            {
+              "seq": 70,
+              "heuristicTokens": 530,
+              "system": false
+            },
+            {
+              "seq": 74,
+              "heuristicTokens": 587,
+              "system": false
+            },
+            {
+              "seq": 76,
+              "heuristicTokens": 4139,
+              "system": false
+            },
+            {
+              "seq": 78,
+              "heuristicTokens": 675,
+              "system": false
+            },
+            {
+              "seq": 82,
+              "heuristicTokens": 425,
+              "system": false
+            },
+            {
+              "seq": 84,
+              "heuristicTokens": 26,
+              "system": false
+            },
+            {
+              "seq": 86,
+              "heuristicTokens": 742,
+              "system": false
+            },
+            {
+              "seq": 90,
+              "heuristicTokens": 276,
+              "system": false
+            },
+            {
+              "seq": 92,
+              "heuristicTokens": 157,
+              "system": false
+            },
+            {
+              "seq": 94,
+              "heuristicTokens": 268,
+              "system": false
+            },
+            {
+              "seq": 98,
+              "heuristicTokens": 448,
+              "system": false
+            },
+            {
+              "seq": 100,
+              "heuristicTokens": 1356,
+              "system": false
+            },
+            {
+              "seq": 102,
+              "heuristicTokens": 427,
+              "system": false
+            },
+            {
+              "seq": 106,
+              "heuristicTokens": 605,
+              "system": false
+            },
+            {
+              "seq": 108,
+              "heuristicTokens": 104,
+              "system": false
+            },
+            {
+              "seq": 110,
+              "heuristicTokens": 54,
+              "system": false
+            },
+            {
+              "seq": 114,
+              "heuristicTokens": 509,
+              "system": false
+            },
+            {
+              "seq": 116,
+              "heuristicTokens": 12,
+              "system": false
+            },
+            {
+              "seq": 118,
+              "heuristicTokens": 451,
+              "system": false
+            },
+            {
+              "seq": 122,
+              "heuristicTokens": 1245,
+              "system": false
+            },
+            {
+              "seq": 124,
+              "heuristicTokens": 61,
+              "system": false
+            },
+            {
+              "seq": 128,
+              "heuristicTokens": 867,
+              "system": false
+            },
+            {
+              "seq": 130,
+              "heuristicTokens": 224,
+              "system": false
+            },
+            {
+              "seq": 132,
+              "heuristicTokens": 156,
+              "system": false
+            },
+            {
+              "seq": 136,
+              "heuristicTokens": 2098,
+              "system": false
+            },
+            {
+              "seq": 138,
+              "heuristicTokens": 21,
+              "system": false
+            },
+            {
+              "seq": 142,
+              "heuristicTokens": 1148,
+              "system": false
+            },
+            {
+              "seq": 150,
+              "heuristicTokens": 9,
+              "system": false
+            },
+            {
+              "seq": 153,
+              "heuristicTokens": 442,
+              "system": false
+            },
+            {
+              "seq": 155,
+              "heuristicTokens": 70,
+              "system": false
+            },
+            {
+              "seq": 157,
+              "heuristicTokens": 1902,
+              "system": false
+            },
+            {
+              "seq": 161,
+              "heuristicTokens": 614,
+              "system": false
+            },
+            {
+              "seq": 164,
+              "heuristicTokens": 23,
+              "system": false
+            },
+            {
+              "seq": 168,
+              "heuristicTokens": 269,
+              "system": false
+            },
+            {
+              "seq": 170,
+              "heuristicTokens": 287,
+              "system": false
+            },
+            {
+              "seq": 174,
+              "heuristicTokens": 692,
+              "system": false
+            },
+            {
+              "seq": 176,
+              "heuristicTokens": 296,
+              "system": false
+            },
+            {
+              "seq": 180,
+              "heuristicTokens": 318,
+              "system": false
+            },
+            {
+              "seq": 182,
+              "heuristicTokens": 1304,
+              "system": false
+            },
+            {
+              "seq": 186,
+              "heuristicTokens": 372,
+              "system": false
+            },
+            {
+              "seq": 188,
+              "heuristicTokens": 1003,
+              "system": false
+            },
+            {
+              "seq": 190,
+              "heuristicTokens": 578,
+              "system": false
+            },
+            {
+              "seq": 194,
+              "heuristicTokens": 1480,
+              "system": false
+            },
+            {
+              "seq": 196,
+              "heuristicTokens": 593,
+              "system": false
+            },
+            {
+              "seq": 198,
+              "heuristicTokens": 598,
+              "system": false
+            },
+            {
+              "seq": 202,
+              "heuristicTokens": 818,
+              "system": false
+            },
+            {
+              "seq": 204,
+              "heuristicTokens": 501,
+              "system": false
+            },
+            {
+              "seq": 206,
+              "heuristicTokens": 833,
+              "system": false
+            },
+            {
+              "seq": 210,
+              "heuristicTokens": 762,
+              "system": false
+            },
+            {
+              "seq": 212,
+              "heuristicTokens": 311,
+              "system": false
+            },
+            {
+              "seq": 214,
+              "heuristicTokens": 16,
+              "system": false
+            },
+            {
+              "seq": 218,
+              "heuristicTokens": 214,
+              "system": false
+            },
+            {
+              "seq": 220,
+              "heuristicTokens": 2057,
+              "system": false
+            },
+            {
+              "seq": 224,
+              "heuristicTokens": 850,
+              "system": false
+            },
+            {
+              "seq": 226,
+              "heuristicTokens": 110,
+              "system": false
+            },
+            {
+              "seq": 228,
+              "heuristicTokens": 113,
+              "system": false
+            },
+            {
+              "seq": 232,
+              "heuristicTokens": 395,
+              "system": false
+            },
+            {
+              "seq": 234,
+              "heuristicTokens": 346,
+              "system": false
+            },
+            {
+              "seq": 236,
+              "heuristicTokens": 34,
+              "system": false
+            },
+            {
+              "seq": 240,
+              "heuristicTokens": 436,
+              "system": false
+            },
+            {
+              "seq": 242,
+              "heuristicTokens": 138,
+              "system": false
+            },
+            {
+              "seq": 246,
+              "heuristicTokens": 972,
+              "system": false
+            },
+            {
+              "seq": 248,
+              "heuristicTokens": 60,
+              "system": false
+            },
+            {
+              "seq": 252,
+              "heuristicTokens": 1475,
+              "system": false
+            },
+            {
+              "seq": 254,
+              "heuristicTokens": 335,
+              "system": false
+            },
+            {
+              "seq": 258,
+              "heuristicTokens": 1331,
+              "system": false
+            },
+            {
+              "seq": 260,
+              "heuristicTokens": 49,
+              "system": false
+            },
+            {
+              "seq": 264,
+              "heuristicTokens": 60,
+              "system": false
+            },
+            {
+              "seq": 266,
+              "heuristicTokens": 216,
+              "system": false
+            },
+            {
+              "seq": 270,
+              "heuristicTokens": 1202,
+              "system": false
+            },
+            {
+              "seq": 272,
+              "heuristicTokens": 47,
+              "system": false
+            },
+            {
+              "seq": 276,
+              "heuristicTokens": 126,
+              "system": false
+            },
+            {
+              "seq": 279,
+              "heuristicTokens": 37,
+              "system": false
+            },
+            {
+              "seq": 280,
+              "heuristicTokens": 42,
+              "system": false
+            },
+            {
+              "seq": 284,
+              "heuristicTokens": 253,
+              "system": false
+            },
+            {
+              "seq": 286,
+              "heuristicTokens": 5272,
+              "system": false
+            }
+          ],
+          "breakdown": {
+            "systemTokens": 1483,
+            "toolsTokens": 5619,
+            "messageTokens": 59515
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "openTurnStartSeq": 147,
+          "lastStepStartSeq": 288,
+          "lastStepBoundary": {
+            "kind": "start",
+            "seq": 288
+          },
+          "lastTurn": 2
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 289,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 289,
+        "val": {
+          "turns": 2,
+          "steps": 37,
+          "llmMs": 173451,
+          "toolMs": 103186,
+          "ttftMs": 33694,
+          "ttftSteps": 37,
+          "decodeMs": 139757,
+          "decodeTokens": 29232,
+          "lastTurn": 2,
+          "openStep": {
+            "turn": 2,
+            "step": 21,
+            "startTime": 1792144917206,
+            "firstTokenTime": null
+          },
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "帮我打包目前所有改动，以便我在另一台电脑上使用deepseek harness时，可以复刻现在的所…",
+              "response": "（当前会话不在 plan mode，无法走审批流程，所以直接把计划放在这里。） # DSH 状态复刻打包计划 ## 一、核心结论（决定了打包范围） 对 `D:\\AA12583\\dsh` 安装目录做了时间戳与哈希核对： > **DSH 程序…"
+            },
+            {
+              "turn": 2,
+              "seq": 147,
+              "prompt": "开始打包",
+              "response": ""
+            }
+          ],
+          "draft": "核心复制完成（35.5 MB，含 pnpm 链接森林）。现在写重建后的 `cordis.patch.yml`（恢复前基准 + `medium` + `gpt-quota` 的 `revision: 5`），并做路径 token 化。"
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 289,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "subagentCatalog": {
+        "ver": 3,
+        "seq": 289,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 289,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0,
+          "pendingTurnStart": 1792144801439
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 289,
+        "val": {}
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 289,
+        "val": [
+          {
+            "content": "冻结快照：建立基线哈希清单",
+            "status": "in_progress"
+          },
+          {
+            "content": "复制 payload 目录树（components / dsh-home / reference / raw）",
+            "status": "pending"
+          },
+          {
+            "content": "token 化 4 处跨机硬编码",
+            "status": "pending"
+          },
+          {
+            "content": "编写 tools（restore / repoint / verify）+ MANIFEST 生成器",
+            "status": "pending"
+          },
+          {
+            "content": "写 README-复刻说明.md 与 RESTORE.md",
+            "status": "pending"
+          },
+          {
+            "content": "临时目录模拟还原 + 自检（node --check / YAML / 哈希）",
+            "status": "pending"
+          },
+          {
+            "content": "生成 zip 并报告体积与 SHA256",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 289,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 289,
+        "val": null
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 289,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-account",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 289,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792144801450
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 289,
+        "val": null
+      }
+    }
+  }
+}

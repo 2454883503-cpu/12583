@@ -1,0 +1,365 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792136656120,
+      "cwd": "C:\\Users\\tanyu\\Documents\\deepseek-harness\\default-workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 77,
+        "val": "鹈鹕骑自行车网页动画"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 77,
+        "val": {
+          "first": {
+            "seq": 11,
+            "text": "使用svg绘制一个鹈鹕骑自行车的html动画，你不需要任何测试，不使用任何skill。"
+          },
+          "count": 1,
+          "lastSeq": 11
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 77,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 77,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 77,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 90462,
+            "outputTokens": 15852,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 9,
+            "buckets": {
+              "uncachedInputTokens": 20601,
+              "outputTokens": 70,
+              "cacheReadTokens": 0,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 77,
+        "val": {
+          "surfaceTokens": 12495,
+          "contextWindow": 200000,
+          "pressureTokens": 20601,
+          "sampledSurfaceTokens": 12462
+        }
+      },
+      "contextBreakdown": {
+        "ver": 5,
+        "seq": 77,
+        "val": {
+          "nodes": [
+            {
+              "seq": 10,
+              "heuristicTokens": 1493,
+              "system": true
+            },
+            {
+              "seq": 11,
+              "heuristicTokens": 19,
+              "system": false
+            },
+            {
+              "seq": 12,
+              "heuristicTokens": 135,
+              "system": false
+            },
+            {
+              "seq": 13,
+              "heuristicTokens": 556,
+              "system": false
+            },
+            {
+              "seq": 19,
+              "heuristicTokens": 42,
+              "system": false
+            },
+            {
+              "seq": 21,
+              "heuristicTokens": 34,
+              "system": false
+            },
+            {
+              "seq": 23,
+              "heuristicTokens": 24,
+              "system": false
+            },
+            {
+              "seq": 26,
+              "heuristicTokens": 16,
+              "system": false
+            },
+            {
+              "seq": 28,
+              "heuristicTokens": 34,
+              "system": false
+            },
+            {
+              "seq": 30,
+              "heuristicTokens": 24,
+              "system": false
+            },
+            {
+              "seq": 33,
+              "heuristicTokens": 72,
+              "system": false
+            },
+            {
+              "seq": 35,
+              "heuristicTokens": 23,
+              "system": false
+            },
+            {
+              "seq": 38,
+              "heuristicTokens": 78,
+              "system": false
+            },
+            {
+              "seq": 40,
+              "heuristicTokens": 56,
+              "system": false
+            },
+            {
+              "seq": 43,
+              "heuristicTokens": 33,
+              "system": false
+            },
+            {
+              "seq": 45,
+              "heuristicTokens": 12,
+              "system": false
+            },
+            {
+              "seq": 54,
+              "heuristicTokens": 4757,
+              "system": false
+            },
+            {
+              "seq": 56,
+              "heuristicTokens": 38,
+              "system": false
+            },
+            {
+              "seq": 60,
+              "heuristicTokens": 26,
+              "system": false
+            },
+            {
+              "seq": 61,
+              "heuristicTokens": 106,
+              "system": false
+            },
+            {
+              "seq": 62,
+              "heuristicTokens": 4758,
+              "system": false
+            },
+            {
+              "seq": 64,
+              "heuristicTokens": 44,
+              "system": false
+            },
+            {
+              "seq": 67,
+              "heuristicTokens": 52,
+              "system": false
+            },
+            {
+              "seq": 70,
+              "heuristicTokens": 30,
+              "system": false
+            },
+            {
+              "seq": 73,
+              "heuristicTokens": 33,
+              "system": false
+            }
+          ],
+          "breakdown": {
+            "systemTokens": 1493,
+            "toolsTokens": 5619,
+            "messageTokens": 11002
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 72,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 74
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 77,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 77,
+        "val": {
+          "turns": 1,
+          "steps": 9,
+          "llmMs": 337289,
+          "toolMs": 845,
+          "ttftMs": 71904,
+          "ttftSteps": 9,
+          "decodeMs": 265385,
+          "decodeTokens": 15852,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 7,
+              "prompt": "使用svg绘制一个鹈鹕骑自行车的html动画，你不需要任何测试，不使用任何skill。",
+              "response": "已完成：[打开鹈鹕骑行动画](<pelican-ride.html>)。 包含踩踏、车轮旋转、围巾飘动和海岸背景，支持三档速度及暂停。单文件，无外部依赖。 按要求，未运行测试，未使用 skill。"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 77,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "subagentCatalog": {
+        "ver": 3,
+        "seq": 77,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 77,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 77,
+        "val": {}
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "preset": "danger-full-access",
+          "sandbox": "danger-full-access",
+          "approval": "never",
+          "seeded": true
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 77,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 77,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 77,
+        "val": null
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 77,
+        "val": {
+          "lastUsed": {
+            "provider": "gpt-local",
+            "model": "gpt-6.1-sol",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 77,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792141632204
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 77,
+        "val": null
+      }
+    }
+  }
+}

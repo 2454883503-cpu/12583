@@ -1,0 +1,27 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const vm=require('node:vm');const fs=require('node:fs');
+test('GPT-only overlay, live RPC, model change and completion refresh',async()=>{
+ let plugin,selection={next:{provider:'gpt-local',model:'gpt-6.1-sol'}},selectedCallback,status,Component,requests=0,scheduled;
+ const React={createElement:(type,props,...children)=>({type,props,children}),Fragment:'fragment',useState:x=>[x,()=>{}],useEffect:fn=>fn()};
+ const saved=new Map();let resize;
+ const sandbox={window:{innerWidth:1000,innerHeight:800,localStorage:{getItem:k=>saved.get(k),setItem:(k,v)=>saved.set(k,v)},addEventListener:(event,fn)=>{if(event==='resize')resize=fn;},removeEventListener(){},__ModuleLoader__:{load:x=>plugin=x.factory(()=>React)}},document:{hidden:false,addEventListener(){},removeEventListener(){}},setInterval:()=>1,clearInterval(){},setTimeout:fn=>(scheduled=fn,1),clearTimeout(){},URL,console};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/client.js','utf8'),sandbox);
+ const ctx={sessions:{list:{getSnapshot:()=>({byId:{a:{id:'a',retainedBy:{mainView:1}}}}),subscribe:()=>()=>{}},binding:id=>({session:{projections:{faceOf:()=>({getSnapshot:()=>selection,subscribe:fn=>(selectedCallback=fn,()=>{})})}}})},connection:{rpc:{call:async(channel,endpoint,payload)=>{assert.equal(channel,'/api');assert.equal(endpoint,'gptQuota/read');requests++;return{ok:true,value:{windows:{fiveHour:{remainingPercent:83,resetAt:1792155421},week:{remainingPercent:97,resetAt:1792742221}},stale:false}};}}},remote:{$on:(event,fn)=>(assert.equal(event,'api-session/status'),status=fn,()=>{})},slots:{inject:(slot,fn)=>fn(),register:(options,C)=>(Component=C,()=>{})},effect:()=>{}};
+ plugin.apply(ctx);await new Promise(setImmediate);assert.equal(requests,1);assert.equal(Component().type,'aside');
+ status('a',true);status('a',false);assert.equal(typeof scheduled,'function');scheduled();await new Promise(setImmediate);assert.equal(requests,2);
+ selection={next:{provider:'deepseek',model:'deepseek-chat'}};selectedCallback();assert.equal(Component(),null);
+ selection={next:{provider:'gpt-local',model:'gpt-6.1-sol'}};selectedCallback();await new Promise(setImmediate);assert.equal(Component().type,'aside');assert.equal(requests,3);
+ const view=Component();view.props.ref({getBoundingClientRect:()=>({left:700,top:64,width:278,height:280})});
+ const header=view.children[0],target={setPointerCapture(){},hasPointerCapture:()=>true,releasePointerCapture(){}};
+ const event={button:0,pointerId:1,clientX:720,clientY:74,target:{closest:()=>null},currentTarget:target,preventDefault(){}};
+ header.props.onPointerDown(event);header.props.onPointerMove({...event,clientX:220,clientY:310});
+ assert.equal(Component().props.style.left,200);assert.equal(Component().props.style.top,300);
+ header.props.onPointerUp(event);assert.equal(JSON.parse(saved.get('dsh.gpt-quota.position.v1')).x,200);
+ header.props.onPointerDown(event);header.props.onPointerMove({...event,clientX:2000,clientY:-50});header.props.onPointerUp(event);
+ assert.equal(Component().props.style.left,722);assert.equal(Component().props.style.top,0);
+   header.props.onPointerDown({...event,target:{closest:()=>({})}});header.props.onPointerMove({...event,clientX:0,clientY:0});  sandbox.window.innerWidth=500;resize();assert.equal(Component().props.style.left,222);
+  header.children[1].props.onClick();assert.equal(saved.get('dsh.gpt-quota.locked.v1'),'true');
+  header.props.onPointerDown(event);header.props.onPointerMove({...event,clientX:0,clientY:0});assert.equal(Component().props.style.left,222);
+  header.children[1].props.onClick();assert.equal(saved.get('dsh.gpt-quota.locked.v1'),'false');
+  header.props.onPointerDown(event);header.props.onPointerMove({...event,clientX:0,clientY:0});assert.equal(Component().props.style.left,0);
+ header.props.onPointerDown({...event,target:{closest:()=>({})}});header.props.onPointerMove({...event,clientX:0,clientY:0});assert.equal(Component().props.style.left,0);
+});

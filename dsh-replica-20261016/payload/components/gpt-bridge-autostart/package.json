@@ -1,0 +1,16 @@
+{
+  "name": "dsh-gpt-bridge-autostart",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Starts and supervises the openai-api-server-via-codex bridge as a DSH-managed subprocess, so the gpt-local provider is reachable whenever DSH runs.",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./lib": "./lib.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node index.test.mjs"
+  }
+}

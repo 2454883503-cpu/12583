@@ -1,0 +1,177 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+#
+# NOTE (2026-10-16): DSH profile recovery rewrote this file at 17:21:19 and
+# moved the previous content to cordis.patch.yml.bak-1792142479700. The rows
+# below were restored from that backup. Keep a copy: a future recovery/plugin
+# operation can replace this file again.
+- id: ui-settings-account
+  name: "@deepseek-ai/dsh-client-ui-settings-account"
+  config:
+    version: 1
+    step: done
+    purpose: null
+    process: standard
+    completion: skipped
+    usage: compact
+    developerTools: false
+- id: ui-chat
+  name: "@deepseek-ai/dsh-client-ui-chat"
+  config:
+    transcriptView: standard
+    performanceUsage: compact
+# Settings panel: must stay ENABLED for plugin UIs that mount into
+# `settings.section` (e.g. dsh-our-free-model) — with it disabled the settings
+# dialog cannot open at all, so those plugins have no entry point.
+- id: ui-settings
+  name: "@deepseek-ai/dsh-client-ui-settings"
+  config:
+    enabled: true
+- id: ui-theme
+  name: "@deepseek-ai/dsh-client-ui-theme"
+  config:
+    preference: dark
+    fontSize: 16
+# GPT models served by the local openai-api-server-via-codex bridge.
+# The bridge is a separate process and must be running, with the local proxy
+# up and the ChatGPT-mode credentials in %USERPROFILE%\.codex-chatgpt\auth.json:
+#   <本仓库>\openai-api-server-via-codex\start-server.cmd
+# It accepts any non-empty key, hence the placeholder Authorization header.
+- id: llm-pi-ai
+  name: "@deepseek-ai/dsh-llm-pi-ai"
+  config:
+    providers:
+      gpt-local:
+        displayName: GPT (Codex bridge)
+        api: openai-completions
+        baseURL: http://127.0.0.1:18080/v1
+        compat:
+          supportsReasoningEffort: true
+          thinkingFormat: openai
+        headers:
+          Authorization: "Bearer dummy-not-a-real-openai-api-key"
+        models:
+          - id: gpt-5.6-luna
+            name: GPT-5.6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6-luna
+            name: GPT-6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6.1-sol
+            name: GPT-6.1 Sol
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+- id: workbuddy
+  config:
+    modelAllow:
+      - deepseek-v4.1-flash
+      - glm-5.3-flash
+      - hy4-preview
+      - kimi-k3-2
+      - minimax-m3.1-flash
+      - space-bunny
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: workbuddy
+    model: deepseek-v4.1-flash
+    reasoningEffort: medium
+
+# GPT quota floating window: host half + browser overlay, mounted from the
+# local package in the workspace (not a third-party registry plugin).
+# gpt-bridge-autostart starts the openai-api-server-via-codex bridge through
+# DSH's subprocess service, so the gpt-local provider is reachable whenever DSH
+# runs; the child is terminated when the plugin unloads or DSH exits.
+# Config (all optional): bridgeDir, port, authPath, proxyURL, graceMs.
+# The proxy defaults to DSH_LOCAL_PROXY, then http://127.0.0.1:7892.
+- insert:
+    - id: gpt-quota
+      name: '@COMPONENT_URI@/gpt-quota-plugin/index.mjs'
+    - id: gpt-bridge-autostart
+      name: '@COMPONENT_URI@/gpt-bridge-autostart/index.mjs'
+      config:
+        maxRetries: 10
+        retryDelayMs: 30000
+- id: agent-preset-registry
+  name: "@deepseek-ai/dsh-agent-preset-registry"
+  config:
+    default: standard
+    selectedDefault: standard
+
+# Desktop pet: use the DeepSeek娘 sprite instead of the bundled `text` test
+# pet (which renders as plain coloured blocks). The pet lives in the USER pets
+# dir (~/.dsh/desktop-pet/pets/deepseek) so it survives plugin upgrades.
+# This OVERRIDES the row the dsh-desktop-pet bundle registers (same id) — do
+# not add a second `- insert:` of `desktop-pet`.
+- id: desktop-pet
+  config:
+    petId: deepseek
+    petScale: 1
+    alwaysOnTop: true
+    animationEnabled: true
+    hideWhenIdle: false
+    idleFrequencySec: 20
+
+# dsh-session-sync needs this override because `git` is not on PATH:
+# - id: session-sync
+#   config:
+#     gitBin: '<用户目录>\.workbuddy\binaries\PortableGit\versions\1.2.0\cmd\git.exe'
+#
+# dsh-ide-git reads the git executable from the DSH_IDE_GIT_BIN environment
+# variable (not from row Config), and `git` is not on PATH on this machine, so
+# its git operations would fail with 'cannot start git'. The desktop app
+# inherits the registry environment, so the variable is set machine-wide
+# below rather than in this profile.
+
+# Image generation via the local openai-api-server-via-codex bridge.
+# The bridge (127.0.0.1:18080) proxies ChatGPT-subscription credentials from
+# %USERPROFILE%\.codex-chatgpt\auth.json, so no real API key is needed; the
+# plugin still resolves OPENAI_COMPAT_API_KEY, hence the dummy below.
+# Verified 2026-10-19: POST /v1/images/generations with gpt-image-2.5 -> 200.
+# Change openaiCompatModel to switch variants (gpt-image-2.5-flare / -sunburst).
+#
+# This OVERRIDES the row the dsh-image-gen bundle registers (same id, same
+# module) — it must not be a second `- insert:` of the same id, or the Loader
+# store keeps two entries under one id and the winner depends on layer order.
+- id: image-gen
+  config:
+    provider: openai-compat
+    # The Codex bridge on 18080 has no /v1/images/edits. The local shim on
+    # 18081 forwards generations to it unchanged and translates edits onto the
+    # bridge's Responses + image_generation tool path, which does accept
+    # reference images. Start it with image-edit-shim/start-shim.cmd (a Startup
+    # shortcut already does this). Verified: edits return transparent PNG.
+    openaiCompatBaseURL: http://127.0.0.1:18081/v1
+    openaiCompatModel: gpt-image-2.5
+    openaiCompatQuality: high
+    # The shim emits a transparent PNG by default; the plugin only reads
+    # b64_json, so an explicit format keeps the JSON shape stable.
+    openaiCompatEditFormat: jsonImageUrlArray
+    openaiCompatEditExtra:
+      background: transparent
+      output_format: png
+    openaiCompatSizes:
+      '1:1':
+        '1K': 1024x1024
+      '2:3':
+        '1K': 1024x1536
+      '3:2':
+        '1K': 1536x1024

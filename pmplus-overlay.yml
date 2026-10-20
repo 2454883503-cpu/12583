@@ -1,0 +1,5 @@
+# Throwaway overlay used only to check how a bundle row with the SAME id as the
+# official `plugin-manager` row composes. Never installed, never a profile file.
+- insert:
+    - id: plugin-manager
+      name: dsh-plugin-manager-plus

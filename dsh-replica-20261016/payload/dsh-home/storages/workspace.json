@@ -1,0 +1,50 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "defaultWorkspaceId": "07c77a47-9cfa-41b8-9d7c-b3379678ebc9",
+    "workspaceIds": [
+      "4877a57f-4f0b-45d2-84b1-d5565efcf8de",
+      "a7ced578-7451-455c-a011-dd2e19d8d689",
+      "07c77a47-9cfa-41b8-9d7c-b3379678ebc9"
+    ],
+    "archivedSessionIds": [],
+    "pinnedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "07c77a47-9cfa-41b8-9d7c-b3379678ebc9": {
+        "path": "C:\\Users\\tanyu\\Documents\\deepseek-harness\\default-workspace",
+        "title": "查资料",
+        "sessionIds": [
+          "session-c3d06515-1ef1-4e80-8ea7-8c811a617aeb"
+        ],
+        "createdAt": "2026-10-16T07:44:16.032Z",
+        "updatedAt": "2026-10-16T08:47:10.063Z"
+      },
+      "a7ced578-7451-455c-a011-dd2e19d8d689": {
+        "path": "D:\\AA12583\\dsh\\组件",
+        "title": "组件",
+        "sessionIds": [
+          "session-bd131afc-a25b-48d4-b157-87fcc1f59d46",
+          "session-f24781aa-aed5-4c02-8388-723aec96bac6",
+          "session-fa484101-7a0b-4597-9eb7-6a01949ba7a7"
+        ],
+        "createdAt": "2026-10-16T07:45:07.089Z",
+        "updatedAt": "2026-10-16T08:50:57.955Z"
+      },
+      "4877a57f-4f0b-45d2-84b1-d5565efcf8de": {
+        "path": "C:\\Users\\tanyu\\Desktop\\新关卡",
+        "title": "新关卡",
+        "sessionIds": [
+          "session-180bc456-d2a7-4db9-a6e2-762bce9618e0"
+        ],
+        "createdAt": "2026-10-16T09:26:26.422Z",
+        "updatedAt": "2026-10-16T09:26:26.466Z"
+      }
+    }
+  }
+}

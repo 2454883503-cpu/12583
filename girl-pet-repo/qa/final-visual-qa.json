@@ -1,0 +1,12 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "六帧待机循环顺滑，鲸尾完整连续，头身脚底稳定、嘴巴无说话感且首尾衔接自然，其他动画行保持不变。",
+  "idle_metrics": {
+    "old_max_center_step_px": 8.18,
+    "new_max_center_step_px": 0.73,
+    "old_visible_area_range_px": 1453,
+    "new_visible_area_range_px": 92
+  },
+  "review_warnings": [],
+  "repair_rows": []
+}

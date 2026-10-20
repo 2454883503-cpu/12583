@@ -1,0 +1,128 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+#
+# ---------------------------------------------------------------------------
+# REPLICA NOTE: this file is NOT the live state of the source machine.
+# It is the pre-recovery baseline (recovered from cordis.patch.yml.bak-1792142479700)
+# with two deliberate deviations:
+#   * agent-default-model.reasoningEffort = medium  (live edit on the source machine)
+#   * gpt-quota.config.revision = 5                 (restored; the live file had lost it)
+# The live file had been degraded by a DSH profile recovery at 17:21:19:
+# ui-settings.enabled=false, ui-settings-account.completion=skipped,
+# usage=compact, developerTools=false, ui-chat.performanceUsage=compact.
+# All variants ship under reference\profiles\desktop\ -- see README.
+# ---------------------------------------------------------------------------
+- id: ui-chat
+  name: "@deepseek-ai/dsh-client-ui-chat"
+  config:
+    transcriptView: standard
+    performanceUsage: detailed
+- id: ui-settings
+  name: "@deepseek-ai/dsh-client-ui-settings"
+  config:
+    enabled: true
+- id: ui-settings-account
+  name: "@deepseek-ai/dsh-client-ui-settings-account"
+  config:
+    version: 1
+    step: done
+    usage: detailed
+    developerTools: true
+    purpose: null
+    process: standard
+    completion: api-key
+- id: ui-theme
+  name: "@deepseek-ai/dsh-client-ui-theme"
+  config:
+    preference: dark
+    fontSize: 16
+# GPT models served by the local openai-api-server-via-codex bridge.
+# The bridge is a separate process and must be running, with the local proxy
+# up and the ChatGPT-mode credentials in %USERPROFILE%\.codex-chatgpt\auth.json.
+# Launcher (rewritten to this machine's actual location by restore.ps1):
+#   __COMPONENTS_DIR__\openai-api-server-via-codex\start-server.cmd
+# It accepts any non-empty key, hence the placeholder Authorization header.
+- id: llm-pi-ai
+  name: "@deepseek-ai/dsh-llm-pi-ai"
+  config:
+    providers:
+      gpt-local:
+        displayName: GPT (Codex bridge)
+        api: openai-completions
+        baseURL: http://127.0.0.1:18080/v1
+        compat:
+          supportsReasoningEffort: true
+          thinkingFormat: openai
+        headers:
+          Authorization: "Bearer dummy-not-a-real-openai-api-key"
+        models:
+          - id: gpt-5.6-luna
+            name: GPT-5.6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6-luna
+            name: GPT-6 Luna
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+          - id: gpt-6.1-sol
+            name: GPT-6.1 Sol
+            contextWindow: 200000
+            maxTokens: 32768
+            reasoningEfforts:
+              low: low
+              medium: medium
+              high: high
+              xhigh: xhigh
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: gpt-local
+    model: gpt-6.1-sol
+    reasoningEffort: medium
+
+# GPT quota floating window: host half + browser overlay, mounted from the
+# local package in the workspace (not a third-party registry plugin).
+# gpt-bridge-autostart starts the openai-api-server-via-codex bridge through
+# DSH's subprocess service, so the gpt-local provider is reachable whenever DSH
+# runs; the child is terminated when the plugin unloads or DSH exits.
+# Config (all optional): bridgeDir, port, authPath, proxyURL, graceMs,
+# maxRetries, retryDelayMs. The proxy defaults to DSH_LOCAL_PROXY, then
+# http://127.0.0.1:7892.
+# __COMPONENTS_DIR_URL__ is replaced by restore.ps1 with the percent-encoded
+# file:// URL of this machine's components directory.
+- insert:
+    - id: gpt-quota
+      name: '__COMPONENTS_DIR_URL__/gpt-quota-plugin/index.mjs'
+      config:
+        revision: 5
+    - id: gpt-bridge-autostart
+      name: '__COMPONENTS_DIR_URL__/gpt-bridge-autostart/index.mjs'
+      config:
+        maxRetries: 10
+        retryDelayMs: 30000
+
+# dsh-desktop-pet is selected in package.json -> dsh.profile.bundles.
+# That bundle's own cordis.patch.yml inserts the `desktop-pet` row; override
+# its config (petScale / petId / hideWhenIdle / ...) here if you want.
+
+# dsh-session-sync is selected in package.json -> dsh.profile.bundles.
+# `git` is not on this machine's PATH, and the plugin ships with `gitBin: git`,
+# so point it at the PortableGit already on disk. Delete this override if you
+# ever put a git on PATH (and re-check the version directory after toolchain
+# updates).
+# NOTE: '__PORTABLE_GIT__' is rewritten by restore.ps1 (user name and install
+# location differ per machine); set -PortableGit to override.
+- id: session-sync
+  config:
+    gitBin: '__PORTABLE_GIT__'
