@@ -1,63 +1,73 @@
 {
   "pairs": 5,
-  "baseline_mean": 16.55,
-  "sharpness_min": 0.751,
-  "midpoint_deviation_max": 0.373,
+  "worst_max_side_ratio": 0.705,
+  "worst_balance_px": 0.41,
+  "min_sharpness": 1.003,
   "detail": [
     {
       "pair": [
         0,
         1
       ],
-      "baseline_ab": 16.59,
-      "mid_target": 8.29,
-      "mad_to_a": 11.28,
-      "mad_to_b": 11.29,
-      "sharpness_ratio": 0.751
+      "baseline_ab": 24.0,
+      "raw_mad_to_a": 20.58,
+      "raw_mad_to_b": 20.51,
+      "raw_sharpness": 0.753,
+      "out_mad_to_a": 15.89,
+      "out_mad_to_b": 16.0,
+      "out_sharpness": 1.003
     },
     {
       "pair": [
         1,
         2
       ],
-      "baseline_ab": 17.37,
-      "mid_target": 8.69,
-      "mad_to_a": 11.87,
-      "mad_to_b": 11.61,
-      "sharpness_ratio": 0.857
+      "baseline_ab": 23.86,
+      "raw_mad_to_a": 20.84,
+      "raw_mad_to_b": 20.41,
+      "raw_sharpness": 0.812,
+      "out_mad_to_a": 16.39,
+      "out_mad_to_b": 15.98,
+      "out_sharpness": 1.099
     },
     {
       "pair": [
         2,
         3
       ],
-      "baseline_ab": 17.77,
-      "mid_target": 8.88,
-      "mad_to_a": 12.05,
-      "mad_to_b": 12.29,
-      "sharpness_ratio": 0.813
+      "baseline_ab": 24.57,
+      "raw_mad_to_a": 20.66,
+      "raw_mad_to_b": 20.95,
+      "raw_sharpness": 0.793,
+      "out_mad_to_a": 16.46,
+      "out_mad_to_b": 16.6,
+      "out_sharpness": 1.071
     },
     {
       "pair": [
         3,
         4
       ],
-      "baseline_ab": 18.06,
-      "mid_target": 9.03,
-      "mad_to_a": 12.4,
-      "mad_to_b": 12.37,
-      "sharpness_ratio": 0.839
+      "baseline_ab": 25.27,
+      "raw_mad_to_a": 21.44,
+      "raw_mad_to_b": 21.65,
+      "raw_sharpness": 0.816,
+      "out_mad_to_a": 17.58,
+      "out_mad_to_b": 17.81,
+      "out_sharpness": 1.104
     },
     {
       "pair": [
         4,
         5
       ],
-      "baseline_ab": 12.95,
-      "mid_target": 6.47,
-      "mad_to_a": 8.83,
-      "mad_to_b": 8.87,
-      "sharpness_ratio": 0.82
+      "baseline_ab": 18.34,
+      "raw_mad_to_a": 17.66,
+      "raw_mad_to_b": 17.68,
+      "raw_sharpness": 0.799,
+      "out_mad_to_a": 11.34,
+      "out_mad_to_b": 11.45,
+      "out_sharpness": 1.083
     }
   ]
 }

@@ -9,7 +9,8 @@
     "dsh-office-tools": "1.0.6",
     "dsh-our-free-model": "link:@DSH_COMPONENTS@/dsh-our-free-model",
     "dsh-plugin-workbuddy": "link:@USERPROFILE@/workbuddy-to-dsh/dsh-plugin",
-    "dsh-session-sync": "^0.2.24"
+    "dsh-session-sync": "^0.2.24",
+    "dsh-whale-widget": "link:@DSH_COMPONENTS@/whale-widget"
   },
   "dsh": {
     "profile": {
@@ -23,7 +24,8 @@
         "dsh-our-free-model",
         "@dsh-eac/skin-loader-pack",
         "dsh-office-tools",
-        "dsh-ide-git"
+        "dsh-ide-git",
+        "dsh-whale-widget"
       ]
     }
   }

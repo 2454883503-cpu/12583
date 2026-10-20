@@ -25,6 +25,9 @@
 │   ├─ desktop/cordis.patch.yml    用户 patch 层（主题、模型、浮窗、宠物…）
 │   ├─ web|headless/package.json
 │   └─ PLACEHOLDERS.txt            占位符说明
+├─ docs/
+│   ├─ 环境与踩坑.md         ★ 装机的硬事实、git 不在 PATH、.env 陷阱、编码坑
+│   └─ 插件索引.md           哪个目录是什么插件、怎么挂载
 ├─ assets/desktop-pet/pets/ 桌面宠物资源（deepseek 皮肤）
 ├─ scripts/                 一键部署与同步脚本
 ├─ DSH-插件清单.md          本机实测的插件条目清单

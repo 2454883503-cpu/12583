@@ -21,6 +21,11 @@ out/
 .vite/
 coverage/
 
+# Python 字节码缓存
+__pycache__/
+*.pyc
+*.pyo
+
 # 皮肤工程的构建校验产物（可重新生成，单个 7MB+）
 .verify/
 

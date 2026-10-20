@@ -93,7 +93,7 @@
   config:
     provider: workbuddy
     model: deepseek-v4.1-flash
-    reasoningEffort: medium
+    reasoningEffort: high
 
 # GPT quota floating window: host half + browser overlay, mounted from the
 # local package in the workspace (not a third-party registry plugin).

@@ -1,0 +1,317 @@
+[
+  {
+    "path": ".gitattributes",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d5305b5ed6f18e582bc6ed833e527f486e8b909d",
+    "size": 599,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/d5305b5ed6f18e582bc6ed833e527f486e8b909d"
+  },
+  {
+    "path": ".github",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fed6884b38c7a26d00c69acd174147ff17017baf",
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/trees/fed6884b38c7a26d00c69acd174147ff17017baf"
+  },
+  {
+    "path": ".github/workflows",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ae7e5f62bdc3ff4ff5a8e09344a0cf9b521e090d",
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/trees/ae7e5f62bdc3ff4ff5a8e09344a0cf9b521e090d"
+  },
+  {
+    "path": ".github/workflows/ci.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "65ad6b0a210bde71c3590ae32917e0a4c0f4ec6c",
+    "size": 6559,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/65ad6b0a210bde71c3590ae32917e0a4c0f4ec6c"
+  },
+  {
+    "path": ".github/workflows/publish.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "061e80dc245aedaf20b943b9eeb1b1589eccde9d",
+    "size": 10722,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/061e80dc245aedaf20b943b9eeb1b1589eccde9d"
+  },
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "80d0c46900da3b2efc10e2e0d086fefe1a615850",
+    "size": 714,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/80d0c46900da3b2efc10e2e0d086fefe1a615850"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "51ed0d25dbc1a45854a124f98bd96fe09f5a99ca",
+    "size": 7626,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/51ed0d25dbc1a45854a124f98bd96fe09f5a99ca"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e347bcdf559e0ab4f5a2ea83cf9b027f7426341c",
+    "size": 1066,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/e347bcdf559e0ab4f5a2ea83cf9b027f7426341c"
+  },
+  {
+    "path": "PROVENANCE.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7ffca1b6596439e2a7fbc1df533efa2951a4370e",
+    "size": 3037,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/7ffca1b6596439e2a7fbc1df533efa2951a4370e"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1bd7261042b6e422ac6aaa56be15487a2d9b19e4",
+    "size": 58601,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/1bd7261042b6e422ac6aaa56be15487a2d9b19e4"
+  },
+  {
+    "path": "assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f4a417275848ac0a71ea816c1cca1a1e4bfea2a8",
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/trees/f4a417275848ac0a71ea816c1cca1a1e4bfea2a8"
+  },
+  {
+    "path": "assets/D1.mp3",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0bf91192d11b4923ad7e270457bdd5b2bf974f81",
+    "size": 3294,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/0bf91192d11b4923ad7e270457bdd5b2bf974f81"
+  },
+  {
+    "path": "assets/D2.mp3",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3efbd5ad630fb510bbb726e4cf5fd27b1c32d18d",
+    "size": 4232,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/3efbd5ad630fb510bbb726e4cf5fd27b1c32d18d"
+  },
+  {
+    "path": "assets/DSH2.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2dc35de9dbb54ac183d36fc4d6fcf5ca76fe858d",
+    "size": 809921,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/2dc35de9dbb54ac183d36fc4d6fcf5ca76fe858d"
+  },
+  {
+    "path": "assets/DSniang02.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e0967d97aea9519b52e9033a7aa7585f9e804958",
+    "size": 466452,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/e0967d97aea9519b52e9033a7aa7585f9e804958"
+  },
+  {
+    "path": "assets/DSniang1.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f46b232152ede43630407f3a38de29c07a91be91",
+    "size": 255988,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/f46b232152ede43630407f3a38de29c07a91be91"
+  },
+  {
+    "path": "assets/Ya1.mp3",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a4a566f788042c18b9372f77fcaaaac44377f5d5",
+    "size": 6370,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/a4a566f788042c18b9372f77fcaaaac44377f5d5"
+  },
+  {
+    "path": "assets/Ya2.mp3",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "77e9397beb69837fec05ca1cb02c30eff3b34763",
+    "size": 2976,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/77e9397beb69837fec05ca1cb02c30eff3b34763"
+  },
+  {
+    "path": "assets/approve-default.wav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "08480a14ac6b529159d967ef82562be1dd80be49",
+    "size": 304172,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/08480a14ac6b529159d967ef82562be1dd80be49"
+  },
+  {
+    "path": "assets/ask-default.wav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0dbf483b88af50f00ee0497c9d97380b633649b6",
+    "size": 276524,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/0dbf483b88af50f00ee0497c9d97380b633649b6"
+  },
+  {
+    "path": "assets/bubble-money1.gif",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ebaa533b6d03f078c357c4f38e3b189ef8e41dd",
+    "size": 2704365,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/0ebaa533b6d03f078c357c4f38e3b189ef8e41dd"
+  },
+  {
+    "path": "assets/bubble-petpet.gif",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c2b23427af9cd885c2081f2eaa41c994bca43ca",
+    "size": 94643,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/1c2b23427af9cd885c2081f2eaa41c994bca43ca"
+  },
+  {
+    "path": "assets/cost-default.wav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "44019d32ba8da20417ea59f8f94b6b5ad13982f6",
+    "size": 248876,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/44019d32ba8da20417ea59f8f94b6b5ad13982f6"
+  },
+  {
+    "path": "assets/minecraft-exp-orb.wav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d88f342d776ed980451c544711840b9fe819db0",
+    "size": 59488,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/2d88f342d776ed980451c544711840b9fe819db0"
+  },
+  {
+    "path": "assets/rua.gif",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c2b23427af9cd885c2081f2eaa41c994bca43ca",
+    "size": 94643,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/1c2b23427af9cd885c2081f2eaa41c994bca43ca"
+  },
+  {
+    "path": "assets/task-end-a.wav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c1f768de0c1b5b23be798e2582f9f5a0bab4295",
+    "size": 319288,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/3c1f768de0c1b5b23be798e2582f9f5a0bab4295"
+  },
+  {
+    "path": "assets/whale-widget.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8606759efc81a301ba212280281915da7cf1aba2",
+    "size": 1142585,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/8606759efc81a301ba212280281915da7cf1aba2"
+  },
+  {
+    "path": "cordis.patch.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ae8a91398788f5f3ccc93871d7d7f79092395ae",
+    "size": 719,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/0ae8a91398788f5f3ccc93871d7d7f79092395ae"
+  },
+  {
+    "path": "icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "55390b4bb25244da0647572fe51c0fabf5cbeedd",
+    "size": 82731,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/55390b4bb25244da0647572fe51c0fabf5cbeedd"
+  },
+  {
+    "path": "lib",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fe251505ed14a5ade18e1711be17558b4ed03fec",
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/trees/fe251505ed14a5ade18e1711be17558b4ed03fec"
+  },
+  {
+    "path": "lib/accounting.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "933c0de38e1e921a0810ea055dce66782ff717b3",
+    "size": 13694,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/933c0de38e1e921a0810ea055dce66782ff717b3"
+  },
+  {
+    "path": "lib/index.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1acaaa0bf4ab3abbc1ab34ccf9b9071279a8e5e",
+    "size": 265430,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/d1acaaa0bf4ab3abbc1ab34ccf9b9071279a8e5e"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "02a884ff630ed90607d64d5fe25c86b6232da10f",
+    "size": 1081,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/02a884ff630ed90607d64d5fe25c86b6232da10f"
+  },
+  {
+    "path": "tools",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d44df61d5a7c07c4d9edc2ecb837ece197f121a4",
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/trees/d44df61d5a7c07c4d9edc2ecb837ece197f121a4"
+  },
+  {
+    "path": "tools/check-dead-settings.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d21e65ff7cb534064fb81d38456ccd0ff5d7ed3d",
+    "size": 12201,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/d21e65ff7cb534064fb81d38456ccd0ff5d7ed3d"
+  },
+  {
+    "path": "tools/ci-audit-selftest.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "82c3088358ae7c0789a0a443427169761c03b352",
+    "size": 9223,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/82c3088358ae7c0789a0a443427169761c03b352"
+  },
+  {
+    "path": "tools/ci-audit.allowlist.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "22869d2e830456711b4403b98a3ac0277a2463b5",
+    "size": 5025,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/22869d2e830456711b4403b98a3ac0277a2463b5"
+  },
+  {
+    "path": "tools/ci-audit.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1eef5a938427011f09be0db49093e7ebd79e2fd",
+    "size": 28667,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/d1eef5a938427011f09be0db49093e7ebd79e2fd"
+  },
+  {
+    "path": "tools/z-layer-audit.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "51331d200f8679d9e7b276ddb7b8a63a0fbfdc1d",
+    "size": 3244,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/51331d200f8679d9e7b276ddb7b8a63a0fbfdc1d"
+  },
+  {
+    "path": "whale-widget-prompt.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "136e1b1b6a38681264d92e0ca7b31e97f5378e19",
+    "size": 21457,
+    "url": "https://api.github.com/repos/MeteorNOX/DeepSeek-Balance-Whale-Widget/git/blobs/136e1b1b6a38681264d92e0ca7b31e97f5378e19"
+  }
+]
