@@ -54,6 +54,8 @@ export const CODE = {
   ABORTED: 'ABORTED',
   EMPTY: 'EMPTY_RESPONSE',
   CONTEXT: 'CONTEXT_WINDOW_EXCEEDED',
+  // 使用 dsh 已支持的非重试错误码；渠道拒绝不是登录过期或参数错误。
+  CHANNEL: 'PROVIDER_ERROR',
 };
 
 /** 失败时给用户一句"下一步做什么"（dsh 只展示 message，错误码本身不解释）。 */
@@ -66,11 +68,21 @@ export const ERROR_HINTS = {
   [CODE.TRANSPORT]: '本地桥连接异常：运行 /workbuddy restart 或确认桥进程还活着。',
 };
 
+/** 针对渠道拒绝单独提示：更换推理档位或重复登录通常没有帮助。 */
+export const CHANNEL_REJECTION_HINT = 'WorkBuddy 服务端拒绝此接入渠道。不要反复重试或改写客户端身份；请确认该接入方式受到服务方支持，并保留错误码联系服务方核实。';
+
+/** 只匹配明确的渠道拒绝措辞；同为 11128 的首条 system 缺失不是渠道拒绝。 */
+export function isChannelRejection(message) {
+  return /illegal api invocation from an unapproved channel|unapproved channel|未经(?:批准|授权|认可)的(?:调用)?渠道|未获(?:批准|授权)的(?:调用)?渠道/i.test(String(message || ''));
+}
+
 /** 把上游错误文本 / HTTP 状态分类成 dsh 错误码。 */
 export function classifyError(message, status) {
   const text = String(message || '');
   // 桥把"上游登录态失效"包成 502（本地令牌没错，错的是上游会话）——
   // 按 AUTH 归类，避免 dsh 把它当 5xx 重试两次再报同一个错。
+  // 必须先于 HTTP 400 判断：这类响应需要明确提示渠道限制，且不应重试。
+  if (isChannelRejection(text)) return CODE.CHANNEL;
   if (/upstream login expired|re-?login in the workbuddy/i.test(text)) return CODE.AUTH;
   if (status === 401 || status === 403 || /\b(?:401|403)\b/.test(text)) return CODE.AUTH;
   if (/quota|insufficient|balance|积分|余额/i.test(text)) return CODE.QUOTA;
@@ -856,7 +868,9 @@ export class WorkBuddyAdapter {
        * 错误消息要给**下一步动作**，不能只有上游原文：dsh 的界面只展示 message，
        * 用户看到 "upstream 400: the request parameters were rejected" 时无从下手。
        */
-      const hint = ERROR_HINTS[failureCode];
+      const hint = isChannelRejection(`${detail} ${codeLabel || ''}`)
+        ? CHANNEL_REJECTION_HINT
+        : ERROR_HINTS[failureCode];
       const message = `上游 ${res.status}：${String(detail || '').slice(0, 400)}`
         + `${codeLabel ? `（code ${codeLabel}）` : ''}`
         + `${hint ? ` —— ${hint}` : ''}`;

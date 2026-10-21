@@ -70,3 +70,7 @@ token-ledger.json
 *.tmp
 *.part
 ~$*
+
+# 本机 ACL 修复取证文件与打包副本（报告含机器路径/SID；ZIP 含 .bridge-token）
+workbuddy-to-dsh/acl-recovery/
+/workbuddy-to-dsh.zip

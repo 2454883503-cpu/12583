@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 
-import { WorkBuddyAdapter, mapUsage } from '../lib/adapter.mjs';
+import { WorkBuddyAdapter, mapUsage, classifyError, CODE, CHANNEL_REJECTION_HINT } from '../lib/adapter.mjs';
 import { BridgeClient } from '../lib/bridge.mjs';
 
 /** 起一个假桥：/health、/v1/models、/v1/chat/completions（SSE 回放）。 */
@@ -845,3 +845,38 @@ test('compact 回归：imageRequestPricing / imageRequestTarget 必须存在且�
   assert.ok(!(adapter.imageRequestTarget('workbuddy', 'x', {}) instanceof Promise), 'imageRequestTarget 必须同步');
 });
 
+
+
+test('11128：明确渠道拒绝应与协议格式错误区别，且不在自动重试名单', () => {
+  const rejected = 'buddy: 请求被拦截，请重新发送 Illegal API invocation from an unapproved channel';
+  assert.equal(classifyError(`${rejected} 11128`, 400), CODE.CHANNEL);
+  assert.equal(classifyError('first message is not system prompt 11128', 400), CODE.INVALID);
+  assert.equal(classifyError('invalid_reasoning_effort 11133', 400), CODE.INVALID);
+  const adapter = makeAdapter('http://127.0.0.1:1');
+  assert.ok(!adapter.providerRetryPolicy().retryableCodes.includes(CODE.CHANNEL));
+});
+
+test('11128：伪上游渠道拒绝应输出准确解决方向，而非建议调推理参数', async () => {
+  const stub = await startStub({
+    status: 400,
+    errorBody: {
+      error: {
+        code: 11128,
+        type: 'upstream_error',
+        message: 'workbuddy-bridge: upstream 400: Illegal API invocation from an unapproved channel',
+      },
+    },
+  });
+  try {
+    const adapter = makeAdapter(stub.baseUrl);
+    const chunks = [];
+    for await (const chunk of adapter.stream({ provider: 'workbuddy', model: 'stub-model', messages: [] })) chunks.push(chunk);
+    assert.equal(chunks.length, 1);
+    assert.equal(chunks[0].type, 'finish');
+    assert.equal(chunks[0].reason.kind, 'error');
+    assert.equal(chunks[0].reason.failure.code, CODE.CHANNEL);
+    assert.match(chunks[0].reason.failure.message, /code 11128/);
+    assert.ok(chunks[0].reason.failure.message.includes(CHANNEL_REJECTION_HINT));
+    assert.doesNotMatch(chunks[0].reason.failure.message, /换个档位/);
+  } finally { await stub.close(); }
+});
