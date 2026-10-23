@@ -1,0 +1,613 @@
+commands:
+    chatluna:
+        description: 'ChatLuna 相关指令。'
+        conversation:
+            description: ChatLuna 会话生命周期指令。
+            options:
+                conversation: 目标会话，可使用序号、ID 或标题。
+                page: 页码。
+                limit: 每页数量。
+                archived: 包含已归档会话。
+                preset: 预设分流。
+        new:
+            description: 创建并切换到一个新会话。
+            arguments:
+                title: 会话标题。
+            options:
+                preset: 预设分流。
+                model: 目标模型名称。
+                chatMode: 目标聊天模式。
+        switch:
+            description: 切换当前活跃会话。
+            arguments:
+                conversation: 目标会话，可使用序号、ID 或标题。
+            options:
+                preset: 预设分流。
+        list:
+            description: 列出当前路由下的会话。
+            options:
+                page: 页码。
+                limit: 每页数量。
+                archived: 包含已归档会话。
+                all: 包含已归档会话。
+                preset: 预设分流。
+        current:
+            description: 查看当前活跃会话。
+            options:
+                preset: 预设分流。
+        rename:
+            description: 重命名当前会话或目标会话。
+            arguments:
+                title: 新的会话标题。
+            options:
+                preset: 预设分流。
+        archive:
+            description: 归档一个会话。
+            arguments:
+                conversation: 目标会话，可使用序号、ID 或标题。
+            options:
+                preset: 预设分流。
+        restore:
+            description: 恢复一个已归档会话。
+            arguments:
+                conversation: 目标会话，可使用序号、ID 或标题。
+            options:
+                preset: 预设分流。
+                archived: 包含已归档会话。
+                all: 包含已归档会话。
+        export:
+            description: 将会话导出为 Markdown 记录。
+            arguments:
+                conversation: 目标会话，可使用序号、ID 或标题。
+            options:
+                preset: 预设分流。
+                archived: 包含已归档会话。
+                all: 包含已归档会话。
+        compress:
+            description: 在不引用房间的情况下压缩一个会话。
+            arguments:
+                instruction: 额外压缩要求。
+            options:
+                conversation: 目标会话，可使用序号、ID 或标题。
+                preset: 预设分流。
+                archived: 包含已归档会话。
+                all: 包含已归档会话。
+            messages:
+                success: '已压缩：{0} tokens -> {1} tokens，减少 {2} tokens（{3}%）'
+                skipped: '未执行压缩：{0} tokens -> {1} tokens，减少 {2} tokens（{3}%）'
+                no_conversation: '没有可压缩的会话。'
+                failed: '压缩会话 {0}（{1}）的聊天记录失败：{2}'
+        delete:
+            description: 删除当前会话或目标会话。
+            arguments:
+                conversation: 目标会话，可使用序号、ID 或标题。
+            options:
+                preset: 预设分流。
+                archived: 包含已归档会话。
+                all: 包含已归档会话。
+        use:
+            description: 调整当前会话的使用配置。
+            model:
+                description: 切换当前会话使用的模型。
+                arguments:
+                    model: 目标模型名称。
+                options:
+                    preset: 预设分流。
+                    auto: 恢复当前会话跟随默认模型。
+                messages:
+                    model_required: 请指定目标模型，或使用 `-a` 恢复跟随默认模型。
+                    auto_with_model: 不能同时指定模型和使用 `-a`。
+            preset:
+                description: 切换当前会话使用的预设。
+                arguments:
+                    preset: 目标预设关键词。
+                options:
+                    lane: 要操作的预设分流。
+            mode:
+                description: 切换当前会话使用的聊天模式。
+                arguments:
+                    mode: 目标聊天模式。
+                options:
+                    preset: 预设分流。
+        rule:
+            description: 管理当前路由的会话规则。
+            model:
+                description: 固定或重置当前路由的模型。
+                arguments:
+                    model: 目标模型或 `reset`。
+            preset:
+                description: 固定或重置当前路由的预设。
+                arguments:
+                    preset: 目标预设或 `reset`。
+            mode:
+                description: 固定或重置当前路由的聊天模式。
+                arguments:
+                    mode: 目标聊天模式或 `reset`。
+            share:
+                description: 设置当前路由的共享模式。
+                arguments:
+                    mode: '`shared`、`personal` 或 `reset`。'
+            lock:
+                description: 锁定或解锁当前路由的会话管理。
+                arguments:
+                    state: '`on`、`off`、`toggle` 或 `reset`。'
+            show:
+                description: 查看当前路由的规则状态。
+        chat:
+            description: ChatLuna 对话相关指令。
+            messages:
+                conversation_not_exist: '会话不存在。'
+            text:
+                description: 与大语言模型进行文本对话。
+                options:
+                    conversation: 指定目标会话，可使用序号、ID 或标题。
+                    preset: 预设分流。
+                    type: 设置消息的渲染类型。
+                examples:
+                    - chatluna chat text -t text 你好，世界！
+                    - chatluna chat text -t voice 你好，世界！
+                    - chatluna chat text -c 123e4567-e89b-12d3-a456-426614174000 -t text 你好，世界！
+                arguments:
+                    message: 要发送的消息内容。
+                messages:
+                    invalid-render-type: 渲染类型无效。请使用有效的渲染类型，目前支持的类有 `text` 和 `voice`。
+                    message_required: 请输入要发送的消息内容。用法：`chatluna chat 你好，世界！`
+            rollback:
+                description: 重新生成上一次的对话内容。
+                options:
+                    conversation: 指定目标会话，可使用序号、ID 或标题。
+                    i: 回滚轮数。
+                arguments:
+                    message: 新的消息内容。
+                messages:
+                    conversation_not_found: '未找到指定的会话。'
+                    conversation_not_exist: '会话不存在。'
+                    no_chat_history: '找不到对话记录。'
+                    invalid_chat_history: '错误的聊天记录，请尝试清空聊天记录后重试。'
+                    rollback_success: '已成功回滚到 {0} 轮前的对话，请等待模型回复。'
+            stop:
+                description: 立即停止当前正在进行的对话。
+                options:
+                    conversation: 指定目标会话，可使用序号、ID 或标题。
+                messages:
+                    conversation_not_found: '未找到指定的会话。'
+                    no_active_chat: '当前没有正在运行的会话。'
+                    stop_failed: '停止对话失败。'
+                    success: '已成功停止当前对话。'
+            compress:
+                description: 手动压缩聊天记录（使用无限上下文）。
+                options:
+                    conversation: 指定目标会话，可使用序号、ID 或标题。
+                messages:
+                    success: '已压缩：{0} tokens -> {1} tokens，减少 {2} tokens（{3}%）'
+                    skipped: '未执行压缩：{0} tokens -> {1} tokens，减少 {2} tokens（{3}%）'
+                    conversation_not_found: '未找到指定的会话。'
+                    failed: '压缩会话 {0} 的聊天记录失败：{1}'
+            voice:
+                description: 与模型进行对话并将回复转换为语音输出。
+                options:
+                    conversation: 指定目标会话，可使用序号、ID 或标题。
+                    speaker: 设置语音服务使用目标角色 ID。
+                arguments:
+                    message: 要发送的消息内容。
+        wipe:
+            description: 清空 ChatLuna 的所有使用数据（请谨慎使用）。
+            messages:
+                confirm_wipe: |
+                    您接下来将要操作的是清除 ChatLuna 的全部相关数据！这些数据包括：
+                    1. 所有会话数据
+                    2. 其他缓存在数据库的数据
+                    3. 本地向量数据库的相关数据
+
+                    请输入下列算式的结果以确认删除：{0}。
+                timeout: '删除超时，已取消删除'
+                incorrect_input: '你的输入不正确，已取消删除。'
+                success: '已删除相关数据，即将重启完成更改。'
+
+        restart:
+            description: 重启 ChatLuna 服务。
+            messages:
+                success: '已成功重启 ChatLuna。'
+
+        admin:
+            purge-legacy:
+                description: 清理已迁移的旧版 ChatLuna 数据。
+
+        model:
+            description: ChatLuna 模型相关指令。
+            list:
+                description: 列出所有可用的模型。
+                usage: 'chatluna model list --page 1 --limit 10'
+                options:
+                    page: 页码。
+                    limit: 每页显示的数量。
+                messages:
+                    header: '以下是目前可用的模型列表：'
+                    footer: '你可以通过 chatluna.new -p [preset] 或 chatluna.switch 为会话设置默认模型。'
+                    pages: '当前为第 [page] / [total] 页'
+            search:
+                description: 搜索可用的模型。
+                arguments:
+                    query: 搜索关键词。
+                usage: 'chatluna model search openai --page 1 --limit 10'
+                options:
+                    page: 页码。
+                    limit: 每页显示的数量。
+                messages:
+                    header: '以下是目前搜索到的模型列表：'
+                    footer: '你可以通过 chatluna.new -p [preset] 或 chatluna.switch 为会话设置默认模型。'
+                    pages: '当前为第 [page] / [total] 页'
+            test:
+                description: 测试指定的模型或适配器是否可用。
+                arguments:
+                    model: 模型名称（如 openai/gpt-3.5-turbo）或平台名称（如 openai）。
+                usage: 'chatluna model test openai/gpt-3.5-turbo'
+                messages:
+                    model_required: 未指定模型且未设置全局默认模型。用法：`chatluna model test openai/gpt-3.5-turbo`。
+                    platform_not_found: '未找到平台 {0}，请检查平台名称或确认平台适配器已安装。'
+                    platform_unavailable: '平台 {0} 不可用，请检查配置或等待平台加载。'
+                    model_not_found: '未找到模型 {0}，请检查模型名称是否正确。'
+                    invalid_model_format: '无效的模型格式：{0}。期望格式：平台/模型（如 openai/gpt-3.5-turbo）。'
+                    testing: '正在测试模型 {0}，请稍候...'
+                    test_success: "模型 {0} 测试成功！\n响应时间：{1}ms\n示例回复：{2}"
+                    test_success_no_content: "模型 {0} 测试成功！\n响应时间：{1}ms\n（模型未返回内容）"
+                    test_failed: "模型 {0} 测试失败！\n响应时间：{1}ms\n错误信息：{2}"
+                    test_error: '测试过程中发生错误：{0}'
+
+        tool:
+            description: ChatLuna 工具相关指令。
+            list:
+                description: 列出所有可用的工具。
+                usage: 'chatluna tool list --page 1 --limit 10'
+                options:
+                    page: 页码。
+                    limit: 每页显示的数量。
+                messages:
+                    header: '以下是目前可用的工具列表：'
+                    footer: '你可以在对话中使用这些工具来增强模型的能力'
+                    pages: '当前为第 [page] / [total] 页'
+
+        mcp:
+            description: 'MCP 工具管理相关命令'
+            list:
+                description: '列出所有 MCP 工具'
+                options:
+                    raw: '列出原始的 MCP 服务器配置'
+                messages:
+                    list_servers_header: '以下是当前配置的 MCP 服务器列表：'
+                    server_name: '服务器名称：{0}'
+                    server_config: '服务器配置：\n{0}'
+                    empty_servers: '当前没有配置任何 MCP 服务器。'
+                    list_tools_header: '以下是当前可用的 MCP 工具列表：'
+                    tool_name: '工具名称：{0}'
+                    tool_enabled: '工具状态：{0}'
+                    tool_description: '工具描述：{0}'
+                    tool_selector: '选择器：{0}'
+                    no_selector: '无'
+                    no_description: '无描述'
+                    empty_tools: '当前没有注册任何 MCP 工具。'
+                    parse_error: '解析 MCP 服务器配置时出错，请检查配置格式。'
+                    list_error: '列出工具时出错：{0}'
+                    service_not_ready: 'MCP 服务未准备就绪，请稍后再试。'
+            add:
+                description: '添加 MCP 服务器'
+                arguments:
+                    mcpConfig: 'MCP 服务器配置（JSON 格式）'
+                messages:
+                    add_usage: '使用方法：chatluna.mcp.add <mcpConfig>\n\n示例：\nchatluna.mcp.add {"mcpServers": {"server1": {"command": "node", "args": ["server.js"]}}}'
+                    add_conflict: '检测到以下服务器名称已存在：{0}'
+                    add_overwrite_confirm: '是否覆盖现有服务器配置？输入 Y 确认，其他任何输入取消。'
+                    add_cancelled: '已取消添加操作。'
+                    add_success: '成功添加了 {0} 个 MCP 服务器。'
+                    add_error: '添加 MCP 服务器时出错：{0}'
+                    restart_required: '请注意：需要重启后更改才会生效。'
+            remove:
+                description: '移除 MCP 服务器'
+                arguments:
+                    serverName: '服务器名称'
+                messages:
+                    remove_usage: '使用方法：chatluna.mcp.remove <serverName>\n\n示例：\nchatluna.mcp.remove server1'
+                    server_not_found: '未找到名为 {0} 的服务器。'
+                    remove_success: '成功移除服务器 {0}。'
+                    remove_error: '移除服务器时出错：{0}'
+                    restart_required: '请注意：需要重启后更改才会生效。'
+                    empty_servers: '当前没有配置任何 MCP 服务器。'
+            enable:
+                description: '启用或禁用 MCP 工具'
+                arguments:
+                    toolName: '工具名称'
+                messages:
+                    enable_usage: '使用方法：chatluna.mcp.enable <toolName>\n\n示例：\nchatluna.mcp.enable my_tool'
+                    tool_not_found: '未找到名为 {0} 的工具。'
+                    enable_success: '已将工具 {0} {1}。'
+                    enable_error: '切换工具状态时出错：{0}'
+                    service_not_ready: 'MCP 服务未准备就绪，请稍后再试。'
+                    status_enabled: '启用'
+                    status_disabled: '禁用'
+
+        memory:
+            description: 'ChatLuna 记忆相关指令。'
+            search:
+                description: '搜索记忆。'
+                arguments:
+                    query: '搜索关键词。'
+                usage: 'chatluna memory search --query "你好" --page 1 --limit 10'
+                options:
+                    page: '页码。'
+                    limit: '每页显示的数量。'
+                    preset: '预设分流。'
+                    type: '记忆所属的预设。'
+                    view: '记忆所属的层级。'
+                messages:
+                    header: '以下是使用 {0} 关键词在 {1} 层级下搜索出的记忆列表：'
+                    footer: ''
+                    document_content: '记忆内容： {0}'
+                    document_id: '记忆 ID： {0}'
+                    document_type: '记忆所属的类型： {0}'
+                    document_expire: '记忆过期时间： {0}'
+                    document_level: '记忆的重要性： {0}'
+                    pages: '当前为第 [page] / [total] 页'
+                    search_failed: '搜索记忆失败。'
+                    invalid_view: '无效的记忆层级。目前可用：{0}'
+
+            delete:
+                description: '删除记忆。'
+                arguments:
+                    ids: '记忆 ID 列表。'
+                options:
+                    preset: '预设分流。'
+                    type: '记忆所属的预设。'
+                    view: '记忆所属的层级。'
+                messages:
+                    delete_success: '已删除记忆。'
+                    delete_failed: '删除记忆失败。'
+                    invalid_view: '无效的记忆层级。目前可用：{0}'
+
+            clear:
+                description: '清空记忆。'
+                options:
+                    preset: '预设分流。'
+                    type: '记忆所属的预设。'
+                    view: '记忆所属的层级。'
+                messages:
+                    clear_success: '已清空记忆。'
+                    clear_failed: '清空记忆失败。'
+                    invalid_view: '无效的记忆层级。目前可用：{0}'
+
+            add:
+                description: '添加记忆。'
+                arguments:
+                    content: '记忆内容。'
+                options:
+                    preset: '预设分流。'
+                    type: '记忆所属的预设。'
+                    view: '记忆所属的层级。'
+                messages:
+                    add_success: '已添加记忆。'
+                    add_failed: '添加记忆失败。'
+                    invalid_view: '无效的记忆层级。目前可用：{0}'
+
+            edit:
+                description: '编辑记忆。'
+                arguments:
+                    id: '记忆 ID。'
+                options:
+                    preset: '预设分流。'
+                    type: '记忆所属的预设。'
+                    view: '记忆所属的层级。'
+                messages:
+                    edit_success: '已编辑记忆。'
+                    edit_failed: '编辑记忆失败。'
+                    edit_memory_start: '请发送你的新记忆内容。'
+                    invalid_view: '无效的记忆层级。目前可用：{0}'
+
+        preset:
+            description: 'ChatLuna 预设相关指令。'
+            list:
+                description: '列出当前支持的所有预设。'
+                options:
+                    page: '指定页码'
+                    limit: '设置每页显示数量'
+                messages:
+                    header: '以下是目前可用的预设列表：'
+                    footer: '你可以通过 chatluna.new -p [preset] 或 chatluna.switch 为会话设置默认预设。'
+                    pages: '当前为第 [page] / [total] 页'
+                    preset_keyword: '预设关键词： {0}'
+                    preset_content: '预设内容： {0}'
+            add:
+                description: '添加新预设。'
+                arguments:
+                    preset: '预设名称'
+                messages:
+                    conflict: '该预设关键词已经和其他预设关键词冲突，请更换其他关键词重试哦'
+                    prompt: '请发送你的预设内容。'
+                    timeout: '添加预设超时，已取消添加预设: {0}'
+                    success: '预设添加成功，预设名称为: {0}。 请调用预设列表命令查看。'
+            clone:
+                description: '复制现有预设。'
+                arguments:
+                    originPreset: '源预设名称'
+                    newPresetName: '新预设名称'
+                messages:
+                    conflict: '该预设关键词已经和其他预设关键词冲突，请更换其他关键词重试哦。'
+                    confirm: '你确定要克隆预设 {0} 吗？如果你确定要克隆，请输入 Y 来确认。'
+                    timeout: '操作超时未确认，已自动取消。'
+                    cancelled: '已为你取消操作。'
+                    success: '预设克隆成功，预设名称为: {0}。 请调用预设列表命令查看。'
+            set:
+                description: '修改现有预设。'
+                arguments:
+                    preset: '预设名称'
+                messages:
+                    not_found: '找不到指定的预设。'
+                    not_support: 不支持修改 {0} 预设！该预设自定义了多条消息，属于复杂预设，无法使用此命令修改，请自行前往控制面板里的资源管理器编辑此预设。`
+                    timeout: '操作超时未确认，已自动取消。'
+                    cancelled: '已为你取消操作。'
+                    enter_content: '请发送你的新预设内容。'
+                    success: '预设修改成功，预设名称为: {0}。 请调用预设列表命令查看。'
+            delete:
+                description: '删除指定预设。'
+                arguments:
+                    preset: '预设名称'
+                messages:
+                    only_one_preset: '现在只有一个预设了，删除后将无法使用预设功能，所以不允许删除。'
+                    not_found: '找不到该预设！请检查你是否输入了正确的预设？'
+                    confirm_delete: '是否要删除 {0} 预设？输入大写 Y 来确认删除，输入其他字符来取消删除。提示：删除后使用该预设的会话会自动切换到其它可用预设。'
+                    timeout: '删除预设超时，已取消删除预设: {0}。'
+                    cancelled: '已取消删除预设: {0}'
+                    success: '已删除预设: {0}，即将自动重启完成更改。'
+
+        embeddings:
+            description: 'ChatLuna 嵌入模型管理。'
+            list:
+                description: '查看支持的嵌入模型列表。'
+                options:
+                    page: '指定页码。'
+                    limit: '设置每页显示数量。'
+                messages:
+                    header: '以下是目前可用的嵌入模型列表：'
+                    footer: '你可以使用 chatluna.embeddings.set [model] 来设置默认使用的嵌入模型'
+                    pages: '当前为第 [page] / [total] 页'
+            set:
+                description: '设置默认嵌入模型。'
+                arguments:
+                    embeddings: '嵌入模型名称。'
+                messages:
+                    usage_hint: '你可以使用 chatluna.embeddings.set [model] 来设置默认使用的嵌入模型'
+                    multiple_models_found:
+                        header: '基于你的输入，找到了以下嵌入模型：'
+                        footer: '请输入更精确的嵌入模型名称以避免歧义'
+                        example: '例如：chatluna.embeddings.set {0}'
+                    model_not_found: '找不到对应的嵌入模型，请检查输入是否正确'
+                    success: '已将默认嵌入模型设置为 {0} (将自动重启插件应用更改)'
+
+        vectorstore:
+            description: 'ChatLuna 向量数据库管理。'
+            list:
+                description: '查看支持的向量数据库列表。'
+                options:
+                    page: '指定页码。'
+                    limit: '设置每页显示数量。'
+                messages:
+                    header: '以下是目前可用的向量数据库列表：'
+                    footer: '你可以使用 chatluna.vectorstore.set [model] 来设置默认使用的向量数据库（如果没有任何向量数据库，会使用存储在内存里的向量数据库（临时的））'
+                    pages: '当前为第 [page] / [total] 页'
+            set:
+                description: '设置默认向量数据库。'
+                arguments:
+                    vectorStore: '向量数据库名称。'
+                messages:
+                    usage_hint: '你可以使用 chatluna.vectorstore.set [model] 来设置默认使用的向量数据库'
+                    multiple_stores_found:
+                        header: '基于你的输入，找到了以下向量数据库：'
+                        footer: '请输入更精确的向量数据库名称以避免歧义'
+                        example: '例如：chatluna.vectorstore.set {0}'
+                    store_not_found: '找不到对应的向量数据库，请检查名称是否正确'
+                    success: '已将默认向量数据库设置为 {0}，(将自动重启插件应用更改)'
+
+chatluna:
+    quote_said: '说'
+    aborted: '已成功停止当前对话的生成。'
+    thinking_message: '我还在思考中，前面还有 {0} 条消息等着我回复呢，稍等一下~'
+    tool_call: '正在调用 {0} 工具。'
+    error_message: '使用 ChatLuna 时出现错误，错误码为 %s。请联系开发者以解决此问题。'
+    middleware_error: '执行 {0} 时出现错误: {1}'
+    not_available_model: '当前没有可用的模型，请检查你的配置，是否正常安装了模型适配器并配置。'
+    chat_limit_exceeded: '你的聊天次数已经用完了喵，还需要等待 {0} 分钟才能继续聊天喵 >_<'
+    conversation:
+        default_title: '新会话'
+        active: '当前'
+        status_value:
+            active: '活跃'
+            archived: '已归档'
+            deleted: '已删除'
+            broken: '已损坏'
+        messages:
+            unavailable: '当前会话对应的模型 {0} 不可用，请联系管理员配置 API。'
+            preset_unavailable: '当前会话对应的预设 {0} 不可用，请联系管理员配置预设。'
+            new_success: '已创建会话：{0}'
+            new_forbidden: '当前路由已禁止创建新会话。'
+            admin_required: '错误码 {0}：当前路由要求管理员权限才能管理会话。'
+            target_required: '请提供目标会话，可使用序号、ID 或标题。'
+            target_not_found: '错误码 {0}：当前路由或共享授权范围内未找到目标会话。'
+            target_ambiguous: '错误码 {0}：匹配到多个会话，请改用序号或 ID。'
+            target_outside_route: '错误码 {0}：目标会话不在当前路由内，且没有额外授权。'
+            title_required: '必须提供会话标题。'
+            action_locked: '错误码 {1}：当前规则已锁定会话{0}。'
+            action_disabled: '错误码 {1}：当前路由已禁用会话{0}。'
+            action_failed: '错误码 {2}：会话{0}失败：{1}'
+            fixed_model: '错误码 {1}：当前路由已将模型固定为 {0}。'
+            fixed_preset: '错误码 {1}：当前路由已将预设固定为 {0}。'
+            fixed_chat_mode: '错误码 {1}：当前路由已将聊天模式固定为 {0}。'
+            invalid_chat_mode: '错误码 {1}：聊天模式 {0} 不可用，请检查输入是否正确。'
+            switch_success: '已切换到：{0}'
+            switch_failed: '切换会话失败：{0}'
+            list_header: '当前路由下的会话列表：'
+            list_pages: '第 [page] / [total] 页'
+            list_empty: '当前路由下没有找到任何会话。'
+            current_header: '当前会话：'
+            current_empty: '当前路由未绑定活跃会话。'
+            rename_success: '已重命名为：{0}'
+            rename_failed: '重命名会话失败：{0}'
+            delete_success: '已删除会话：{0}'
+            delete_success_multi: '已删除会话：\n{0}'
+            delete_partial: '部分会话删除成功：\n{0}\n删除失败：\n{1}'
+            delete_failed: '删除会话失败：{0}'
+            use_model_success: '{1} 已切换到模型 {0}。'
+            use_model_failed: '切换模型失败：{0}'
+            use_preset_success: '{1} 已切换到预设 {0}。'
+            use_preset_failed: '切换预设失败：{0}'
+            use_mode_success: '{1} 已切换到聊天模式 {0}。'
+            use_mode_failed: '切换聊天模式失败：{0}'
+            archive_empty: '没有可归档的会话。'
+            archive_success: '已归档会话：{0}'
+            archive_failed: '归档会话失败：{0}'
+            restore_empty: '没有可恢复的会话。'
+            restore_success: '已恢复会话：{0}'
+            restore_failed: '恢复会话失败：{0}'
+            export_empty: '没有可导出的会话。'
+            export_success: '已导出会话：{0}，文件：{3}'
+            export_failed: '导出会话失败：{0}'
+            rule_model_status: '模型规则：默认 {0}，强制 {1}，自动更新 {2}。'
+            rule_preset_status: '当前预设线：{0}；新建默认预设：{1}。'
+            rule_mode_status: '聊天模式规则：默认 {0}，强制 {1}。'
+            rule_share_status: '路由模式：{0}。'
+            rule_model_success: '规则固定模型已设置为 {0}。'
+            rule_preset_success: '规则固定预设已设置为 {0}。'
+            rule_mode_success: '规则固定聊天模式已设置为 {0}。'
+            rule_share_success: '规则路由模式已设置为 {0}。'
+            rule_share_failed: '更新路由模式失败：{0}'
+            rule_lock_success: '规则锁定状态已设置为 {0}。'
+            rule_lock_failed: '更新锁定状态失败：{0}'
+            rule_show_header: '当前会话规则：'
+        action:
+            create: '创建'
+            switch: '切换'
+            archive: '归档'
+            restore: '恢复'
+            export: '导出'
+            rename: '重命名'
+            delete: '删除'
+            update: '更新设置'
+            compress: '压缩'
+        conversation_line: '#{0} {1} [{2}] [{3}]'
+        conversation_line_with_status: '#{0} {1} [{2}] [{3}] [{4}]'
+        conversation_line_with_lane: '#{0} {1} [{2}] [{3}] ({4})'
+        conversation_line_with_lane_status: '#{0} {1} [{2}] [{3}] ({4}) [{5}]'
+        conversation_seq: '序号：{0}'
+        conversation_title: '标题：{0}'
+        conversation_id: 'ID：{0}'
+        conversation_status: '状态：{0}'
+        conversation_effective_model: '生效模型：{0}'
+        conversation_effective_preset: '生效预设：{0}'
+        conversation_effective_chat_mode: '生效聊天模式：{0}'
+        conversation_compression_count: '压缩次数：{0}'
+        conversation_updated_at: '更新时间：{0}'
+        rule_share: '路由规则：{0}'
+        rule_model: '固定模型：{0}'
+        rule_preset: '固定预设：{0}'
+        rule_mode: '固定聊天模式：{0}'
+        rule_lock: '锁定规则：{0}'
+        main_lane: '主线'
+
+    cooldown_wait_message: '不要发这么快喵，等 {0}s 后我们再聊天喵。'

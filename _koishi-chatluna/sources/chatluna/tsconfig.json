@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.base",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "koishi-plugin-chatluna": ["packages/core/src"],
+            "koishi-plugin-chatluna/*": ["packages/core/src/*"],
+            "koishi-plugin-chatluna-*": ["packages/*/src"]
+        }
+    }
+}

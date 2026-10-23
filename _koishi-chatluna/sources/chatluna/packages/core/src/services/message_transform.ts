@@ -1,0 +1,363 @@
+import { h, Session } from 'koishi'
+import { Config, logger } from 'koishi-plugin-chatluna'
+import { Message } from '../types'
+import {
+    ChatLunaError,
+    ChatLunaErrorCode
+} from 'koishi-plugin-chatluna/utils/error'
+import { MessageContentComplex } from '@langchain/core/messages'
+import {
+    isMessageContentComplex,
+    isMessageContentText
+} from 'koishi-plugin-chatluna/utils/langchain'
+
+export class MessageTransformer {
+    private _beforeTransformFunctions: BeforeTransformFunctionWithPriority[] =
+        []
+
+    private _transformFunctions: Map<string, TransformFunctionWithPriority[]> =
+        new Map()
+
+    constructor(private _config: Config) {}
+
+    async transform(
+        session: Session,
+        elements: h[],
+        model: string,
+        message: Message = {
+            content: '',
+            name: session.username,
+            additional_kwargs: {}
+        },
+        options: MessageTransformOptions = {
+            quote: false,
+            includeQuoteReply: true
+        }
+    ): Promise<Message> {
+        await this._runBeforeTransform(
+            session,
+            elements,
+            message,
+            model,
+            options
+        )
+
+        const sourceElementString = elements.map((h) => h.toString(true)).join()
+        const quoteElementString = (
+            (session.quote && session.quote.elements) ??
+            []
+        )
+            .map((h) => h.toString(true))
+            .join()
+
+        for (const element of elements) {
+            await this._processElement(
+                session,
+                element,
+                message,
+                model,
+                options
+            )
+        }
+
+        if (
+            session.quote &&
+            !options.quote &&
+            options.includeQuoteReply &&
+            sourceElementString !== quoteElementString
+        ) {
+            const quoteMessage = await this.transform(
+                session,
+                session.quote.elements ?? [],
+                model,
+                {
+                    content: '',
+                    name: session.username,
+                    conversationId: message.conversationId,
+                    additional_kwargs: {}
+                },
+                {
+                    quote: true,
+                    includeQuoteReply: options.includeQuoteReply
+                }
+            )
+
+            // 构建引用消息的完整格式：时间 + 发言人 + 内容
+            const quoteUsername =
+                session.quote.user?.name || session.quote.user?.id || 'Unknown'
+            const quoteTimestamp = session.quote.timestamp
+                ? new Date(session.quote.timestamp).toLocaleString('zh-CN', {
+                      year: 'numeric',
+                      month: '2-digit',
+                      day: '2-digit',
+                      hour: '2-digit',
+                      minute: '2-digit',
+                      second: '2-digit',
+                      hour12: false
+                  })
+                : ''
+            const quoteSaid = session.text('chatluna.quote_said')
+            const quoteHeader = quoteTimestamp
+                ? `${quoteTimestamp} ${quoteUsername}`
+                : quoteUsername
+
+            if (
+                typeof message.content === 'string' &&
+                typeof quoteMessage.content === 'string'
+            ) {
+                message.content = [
+                    `The Referenced message is ${quoteHeader} ${quoteSaid} said\n`,
+                    quoteMessage.content,
+                    `\n\n User's current message\n`,
+                    message.content
+                ].join('')
+
+                return message
+            }
+
+            const messageContent = [
+                `The Referenced message is ${quoteHeader} ${quoteSaid} said`,
+                ...(Array.isArray(quoteMessage.content)
+                    ? quoteMessage.content
+                    : [quoteMessage.content]),
+                `\n\n User's current message`,
+                ...(Array.isArray(message.content)
+                    ? message.content
+                    : [message.content])
+            ]
+
+            message.content = messageContent
+                .map((content) => {
+                    if (isMessageContentComplex(content)) return content
+                    return { type: 'text', text: content }
+                })
+                .reduce((acc, item) => {
+                    const last = acc[acc.length - 1]
+                    if (
+                        isMessageContentText(item) &&
+                        last != null &&
+                        isMessageContentText(last)
+                    ) {
+                        acc[acc.length - 1] = {
+                            type: 'text',
+                            text: last.text + item.text
+                        }
+                    } else {
+                        acc.push(item)
+                    }
+                    return acc
+                }, [] as MessageContentComplex[])
+        }
+
+        return message
+    }
+
+    before(
+        transformFunction: BeforeMessageTransformFunction,
+        priority: number = 0
+    ) {
+        const wrapper: BeforeTransformFunctionWithPriority = {
+            func: transformFunction,
+            priority
+        }
+
+        const insertIndex = this._beforeTransformFunctions.findIndex(
+            (item) => item.priority > priority
+        )
+
+        if (insertIndex === -1) {
+            this._beforeTransformFunctions.push(wrapper)
+        } else {
+            this._beforeTransformFunctions.splice(insertIndex, 0, wrapper)
+        }
+
+        return () => {
+            const index = this._beforeTransformFunctions.findIndex(
+                (item) => item.func === transformFunction
+            )
+            if (index === -1) return
+
+            this._beforeTransformFunctions.splice(index, 1)
+        }
+    }
+
+    intercept(
+        type: string,
+        transformFunction: MessageTransformFunction,
+        priority: number = 0
+    ) {
+        const functions = this._transformFunctions.get(type)
+
+        if (type === 'text' && functions?.length) {
+            throw new ChatLunaError(
+                ChatLunaErrorCode.UNKNOWN_ERROR,
+                new Error('text transform function already exists')
+            )
+        }
+
+        const wrapper: TransformFunctionWithPriority = {
+            func: transformFunction,
+            priority
+        }
+
+        if (!functions) {
+            this._transformFunctions.set(type, [wrapper])
+        } else {
+            const insertIndex = functions.findIndex(
+                (item) => item.priority > priority
+            )
+            if (insertIndex === -1) {
+                functions.push(wrapper)
+            } else {
+                functions.splice(insertIndex, 0, wrapper)
+            }
+        }
+
+        return () => {
+            const currentFunctions = this._transformFunctions.get(type)
+            if (!currentFunctions) return
+
+            const index = currentFunctions.findIndex(
+                (item) => item.func === transformFunction
+            )
+            if (index === -1) return
+
+            if (currentFunctions.length === 1) {
+                this._transformFunctions.delete(type)
+            } else {
+                currentFunctions.splice(index, 1)
+            }
+        }
+    }
+
+    replace(type: string, transformFunction: MessageTransformFunction) {
+        if (type === 'text') {
+            throw new ChatLunaError(
+                ChatLunaErrorCode.UNKNOWN_ERROR,
+                new Error('text transform function cannot be replaced')
+            )
+        }
+
+        const functions = this._transformFunctions.get(type)
+        if (functions == null || functions.length === 0) {
+            logger?.warn(
+                `transform function for ${type} not exists. Check your installed plugins.`
+            )
+        }
+
+        this._transformFunctions.set(type, [
+            { func: transformFunction, priority: 0 }
+        ])
+        return () => {
+            this._transformFunctions.delete(type)
+        }
+    }
+
+    has(type: string) {
+        const functions = this._transformFunctions.get(type)
+        return functions != null && functions.length > 0
+    }
+
+    private async _processElement(
+        session: Session,
+        element: h,
+        message: Message,
+        model: string,
+        options: MessageTransformOptions
+    ) {
+        const transformFunctions = this._transformFunctions.get(element.type)
+
+        if (!transformFunctions?.length) {
+            if (element.children?.length) {
+                await this.transform(
+                    session,
+                    element.children,
+                    model,
+                    message,
+                    {
+                        quote: options.quote,
+                        includeQuoteReply: false
+                    }
+                )
+            }
+            return
+        }
+
+        const hasChildren = !!element.children?.length
+
+        for (const { func: transformFunction } of transformFunctions) {
+            const result = await transformFunction(
+                session,
+                element,
+                message,
+                model
+            )
+
+            if (result !== false) return
+
+            if (hasChildren) {
+                await this.transform(
+                    session,
+                    element.children,
+                    model,
+                    message,
+                    {
+                        quote: options.quote,
+                        includeQuoteReply: false
+                    }
+                )
+                return
+            }
+        }
+
+        if (hasChildren) {
+            await this.transform(session, element.children, model, message, {
+                quote: options.quote,
+                includeQuoteReply: false
+            })
+        }
+    }
+
+    private async _runBeforeTransform(
+        session: Session,
+        elements: h[],
+        message: Message,
+        model: string,
+        options: MessageTransformOptions
+    ) {
+        for (const { func: transformFunction } of this
+            ._beforeTransformFunctions) {
+            await transformFunction(session, elements, message, model, options)
+        }
+    }
+}
+
+export type BeforeMessageTransformFunction = (
+    session: Session,
+    elements: h[],
+    message: Message,
+    model?: string,
+    options?: MessageTransformOptions
+) => Promise<void>
+
+export type MessageTransformFunction = (
+    session: Session,
+    element: h,
+    message: Message,
+    model?: string
+) => Promise<boolean | void>
+
+interface TransformFunctionWithPriority {
+    func: MessageTransformFunction
+    priority: number
+}
+
+interface BeforeTransformFunctionWithPriority {
+    func: BeforeMessageTransformFunction
+    priority: number
+}
+
+export interface MessageTransformOptions {
+    quote: boolean
+    includeQuoteReply: boolean
+}

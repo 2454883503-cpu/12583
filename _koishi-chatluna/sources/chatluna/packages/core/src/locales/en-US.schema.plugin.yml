@@ -1,0 +1,20 @@
+$inner:
+    - $desc: Global Configuration
+      $inner:
+          chatConcurrentMaxSize: Max concurrent chats for current adapter models.
+          chatTimeLimit: API calls per hour limit (calls/hour).
+          maxRetries: Max retries on model request failure.
+          timeout: Model request timeout (ms).
+          configMode:
+              $desc: Request config mode.
+              $inner:
+                  - Sequential (auto-switch to next valid config on failure).
+                  - Load balancing (rotate through all available configs).
+          proxyMode:
+              $desc: Plugin proxy mode.
+              $inner:
+                  - Use ChatLuna global proxy settings
+                  - Disable proxy
+                  - Use custom proxy
+
+    - proxyAddress: Custom proxy for plugin. Only used when custom proxy mode is selected. (e.g., "http://127.0.0.1:7897" or "socks5://proxy.example.com:1080")
